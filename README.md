@@ -9,5 +9,5 @@ Anggota 1: Hervi Nur Rahmandien
 
 Anggota 2: Auletta Khansa P - 20/456359/TK/50489
 
-Anggota 3: Nur Wulan Febriani - 
+Anggota 3: Nur Wulan Febriani - 20/460557/TK/51146
 
