@@ -8,4 +8,3 @@ Ketua Kelompok:
 Anggota 1: 
 
 Anggota 2: Nur Wulan Febriani - 20/460557/TK/51146
-
