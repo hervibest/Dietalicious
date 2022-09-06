@@ -1,0 +1,5 @@
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
+title: Dietalicious
+description: Aplikasi yang berfungsi berbasis windows presentation foundation (WPF) yang berfungsi untuk menghitung BMI, mencari resep makanan sesuai target kalori dan memberikan rekomendasi resep makanan.
