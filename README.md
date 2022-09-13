@@ -10,4 +10,4 @@ Anggota 1: Auletta Khansa Pradiviasari - 20/456359/TK/50489
 Anggota 2: Nur Wulan Febriani - 20/460557/TK/51146
 
 ## Class Diagram
-![ClassDiagram!](ClassDiagramDietalicious.png)
+![ClassDiagram!](ClassDiagram.png)
