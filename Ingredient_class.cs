@@ -6,8 +6,10 @@ class Ingredient
         private bool amountType;
         private int amount;
         private int calories;
-        public Ingredient(string Name, string Cal, int amt)
+        public Ingredient(int ID, bool amtType, string Name, string Cal, int amt)
    {
+        id = ID;
+        amountType = amountType;
         name= Name;
         calories= Cal;
         amount = amt;
