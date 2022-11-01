@@ -1,0 +1,34 @@
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.csproj.AssemblyReference.cache
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\BMI.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Favorites.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Home.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Recipe and Ingredients.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Settings.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\SignUp.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious_MarkupCompile.cache
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious_MarkupCompile.lref
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\bin\Debug\netcoreapp3.1\Dietalicious.exe
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\bin\Debug\netcoreapp3.1\Dietalicious.deps.json
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\bin\Debug\netcoreapp3.1\Dietalicious.runtimeconfig.json
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\bin\Debug\netcoreapp3.1\Dietalicious.runtimeconfig.dev.json
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\bin\Debug\netcoreapp3.1\Dietalicious.dll
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\bin\Debug\netcoreapp3.1\Dietalicious.pdb
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\BMI.baml
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Favorites.baml
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Home.baml
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Recipe and Ingredients.baml
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Settings.baml
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\SignUp.baml
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.g.resources
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.AssemblyInfoInputs.cache
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.AssemblyInfo.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.csproj.CoreCompileInputs.cache
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.dll
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.pdb
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\Dietalicious.genruntimeconfig.cache
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\SearchRecipe.g.cs
+C:\Project\JuniorProjs\Diet\Dietalicious\Dietalicious\Dietalicious\obj\Debug\netcoreapp3.1\SearchRecipe.baml

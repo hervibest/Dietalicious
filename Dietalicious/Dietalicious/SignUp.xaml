@@ -1,0 +1,28 @@
+﻿<Window x:Class="Dietalicious.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dietalicious"
+        mc:Ignorable="d"
+        Title="SignUp" Height="450" Width="800">
+    <Grid Background="#FF133A1B">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="692*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Create your account" HorizontalAlignment="Left" Height="66" Margin="227,20,0,0" VerticalAlignment="Top" Width="360" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
+        <TextBox Background="#E4DEAE" HorizontalAlignment="Left" Height="33" Margin="242,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316"/>
+        <TextBox Background="#E4DEAE" HorizontalAlignment="Left" Height="33" Margin="242,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316"/>
+        <TextBox Background="#E4DEAE" HorizontalAlignment="Left" Height="33" Margin="242,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316"/>
+        <TextBox Background="#E4DEAE" HorizontalAlignment="Left" Height="34" Margin="242,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316"/>
+        <Button Background="#E4DEAE" Content="Create account" HorizontalAlignment="Left" Height="30" Margin="333,325,0,0" VerticalAlignment="Top" Width="138" Click="Create" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Confirm Password" HorizontalAlignment="Left" Height="32" Margin="96,271,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="32" Margin="96,218,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
+        <Label Content="Username" HorizontalAlignment="Left" Height="32" Margin="96,170,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="32" Margin="96,118,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
+        <Button Background="#B7BF96" Content="Already a member? Sign in" HorizontalAlignment="Left" Height="30" Margin="290,376,0,0" VerticalAlignment="Top" Width="220" Click="Login" FontSize="14" FontWeight="Bold" Foreground="#FFE40A0A"/>
+
+    </Grid>
+</Window>
