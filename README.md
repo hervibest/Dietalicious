@@ -11,3 +11,6 @@ Anggota 2: Nur Wulan Febriani - 20/460557/TK/51146
 
 ## Class Diagram
 ![ClassDiagram!](ClassDiagram.png)
+
+## ERD
+![erd dietalilcious](https://user-images.githubusercontent.com/72687883/192459174-a5d24279-419a-4dde-b0b0-6a9745476a94.png)
