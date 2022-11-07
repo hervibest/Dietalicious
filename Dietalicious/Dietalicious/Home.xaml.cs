@@ -40,5 +40,12 @@ namespace Dietalicious
             Settings settings = new Settings();
             settings.Show();
         }
+
+        private void SignOut_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            MainWindow signUp = new MainWindow();
+            signUp.Show();
+        }
     }
 }

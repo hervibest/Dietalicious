@@ -68,13 +68,9 @@ namespace Dietalicious
         }
         private void Login(object sender, RoutedEventArgs e)
         {
-           
-
-
             Hide();
             MainWindow signUp = new MainWindow();
             signUp.Show();
-
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

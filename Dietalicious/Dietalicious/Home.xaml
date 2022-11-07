@@ -16,9 +16,10 @@
         <Image HorizontalAlignment="Left" Height="173" Margin="26,139,0,0" VerticalAlignment="Top" Width="326" Source="Screenshot_2022-11-01_001615-removebg-preview.png"/>
         <Label Content="Welcome, _______________!" HorizontalAlignment="Left" Height="55" Margin="370,139,0,0" VerticalAlignment="Top" Width="362" FontSize="36" Foreground="#FF133A1B" FontWeight="Bold"/>
         <Label Content="Dietalicious merupakan aplikasi meal planner&#xD;&#xA;yang membantu dalam perencanaan makanan&#xD;&#xA;Anda. Aplikasi ini dilengkapi dengan&#xD;&#xA;fitur perhitungan BMI, pencarian resep &#xD;&#xA;berdasarkan kalori dan list favorit resep Anda." HorizontalAlignment="Left" Height="166" Margin="370,199,0,0" VerticalAlignment="Top" Width="377" FontSize="18" Foreground="#FF133A1B"/>
-        <Button Content="Recipe" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="558,30,0,0" VerticalAlignment="Top" Width="94" FontSize="16" FontWeight="Bold" Click="Recipe_Click"/>
-        <Button Content="Account" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="691,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="Account_Click"/>
-        <Button Content="BMI" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="459,30,0,0" VerticalAlignment="Top" Width="46" FontSize="16" FontWeight="Bold"  Click="BMI_Click" />
+        <Button Content="Recipe" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="430,30,0,0" VerticalAlignment="Top" Width="94" FontSize="16" FontWeight="Bold" Click="Recipe_Click" RenderTransformOrigin="0.617,0.644"/>
+        <Button Content="Account" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="571,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="Account_Click"/>
+        <Button Content="BMI" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="334,30,0,0" VerticalAlignment="Top" Width="46" FontSize="16" FontWeight="Bold"  Click="BMI_Click" RenderTransformOrigin="-1.674,0.466" />
+        <Button Content="Sign Out" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="687,30,0,0" VerticalAlignment="Top" Width="83" FontSize="16" FontWeight="Bold"  Click="SignOut_Click" />
 
     </Grid>
 </Window>

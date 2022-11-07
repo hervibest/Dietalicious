@@ -6,8 +6,8 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\hervipros\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\hervipros\\.nuget\\packages"
+      "C:\\Users\\Thinkpad\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Thinkpad\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

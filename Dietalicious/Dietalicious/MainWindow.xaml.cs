@@ -52,15 +52,15 @@ namespace Dietalicious
                     {
                         MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
                         conn.Close();
-                    Hide();
-                    Home home = new Home();
-                    home.Show();
-                }
-                else
-                {
-                    MessageBox.Show("User belum dibuat atau Password Salah");
-                }
-                    conn.Close();
+                        Hide();
+                        Home home = new Home();
+                        home.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("User belum dibuat atau Password Salah");
+                    }
+                        conn.Close();
                 
                 
             }

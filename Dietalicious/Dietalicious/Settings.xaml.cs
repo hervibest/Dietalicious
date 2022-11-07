@@ -9,6 +9,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Npgsql;
+using System.Data;
 
 namespace Dietalicious
 {
@@ -17,16 +19,54 @@ namespace Dietalicious
     /// </summary>
     public partial class Settings : Window
     {
+        private NpgsqlConnection conn;
+        string connstring = "Host=mydatabase-instance.csbnsdtoskt5.ap-northeast-1.rds.amazonaws.com;Username=postgres;Password=informatika;Database=Dietalicious_database";
+        public static NpgsqlCommand cmd;
+        private string sql = null;
+  
+
         public Settings()
         {
             InitializeComponent();
+            conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            conn.Close();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            Hide();
-            Home home = new Home();
-            home.Show();
+            try
+            {
+                    conn.Open();
+                    sql = @"select * from st_update(:_user_name,:_name,:_email,:_new_password,:_bmi)";
+                    cmd = new NpgsqlCommand(sql, conn);
+
+                    //cmd.Parameters.AddWithValue("_id", r.Cells["_id"].Value.ToString());
+                    cmd.Parameters.AddWithValue("_user_name", tbUsn.Text);
+                    cmd.Parameters.AddWithValue("_name", tbName.Text);
+                    cmd.Parameters.AddWithValue("_email", tbEmail.Text);
+                    cmd.Parameters.AddWithValue("_new_password", tbPass.Password);
+                    cmd.Parameters.AddWithValue("_bmi", tbBMI.Text);
+                    if ((int)cmd.ExecuteScalar() == 1)
+                    {
+                        MessageBox.Show("Data Users berhasil diupdate");
+                        conn.Close();
+                        Hide();
+                        Home home = new Home();
+                        home.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Data tidak berhasil disimpan, username tidak tersedia");
+                        conn.Close();
+                    }
+   
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex.Message, "Save data FAIL!!");
+            }
         }
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
