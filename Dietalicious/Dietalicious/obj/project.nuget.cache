@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2cIt9k203Xg9PXQzUDqlwt2IwVZdTgNdFKwItlAKtDVLhaj8sRL9OsqQUdWIcdL6fGOzeQhYO00M20+ouqVzQA==",
+  "dgSpecHash": "qEsSJKdoP86wdsCrrp6QxmtZ7LQR+f+pkPpfGsDFVtusVa2IZ9rJQieRnUFlfo1316Kz/CgWYWIlR1XjojUE9A==",
   "success": true,
-  "projectFilePath": "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
+  "projectFilePath": "C:\\Users\\nrwfe\\Dietalicious\\UsersnrwfeDietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hervipros\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
-    "C:\\Users\\hervipros\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\hervipros\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\hervipros\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\nrwfe\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
+    "C:\\Users\\nrwfe\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\nrwfe\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\nrwfe\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

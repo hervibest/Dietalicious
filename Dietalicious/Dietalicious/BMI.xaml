@@ -7,17 +7,21 @@
         mc:Ignorable="d"
         Title="BMI" Height="450" Width="800">
     <Grid Background="#FF133A1B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="299*"/>
+            <RowDefinition Height="136*"/>
+        </Grid.RowDefinitions>
         <Label x:Name="lblBMItitle" Content="BMI Calculator" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontWeight="extrabold" FontSize="32" FontFamily="Inter" Margin="0,50,0,0"/>
-        <Label x:Name="lblSex" Content="sex:" HorizontalAlignment="Left" Margin="87,114,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontSize="22.5" FontFamily="Inter Semibold"/>
-        <Label x:Name="lblAge" Content="age:" HorizontalAlignment="Left" Margin="85,168,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontSize="22.5" FontFamily="Inter Semibold"/>
-        <Label x:Name="lblHeight" Content="height (cm):" HorizontalAlignment="Left" Margin="41,228,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontWeight="semibold" FontSize="22.5" FontFamily="Inter Semibold"/>
-        <Label x:Name="lblWeight" Content="weight (kg):" HorizontalAlignment="Left" Margin="41,288,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontWeight="semibold" FontSize="22.5" FontFamily="Inter Semibold"/>
-        <RadioButton x:Name="rbtnFem" Content="female" Margin="216,130,500,0" VerticalAlignment="Top" FontFamily="Inter Regular" FontSize="20" Foreground="#FFD9D9D9" Background="White" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="6,-3,0,0"/>
-        <RadioButton x:Name="rbtnMale" Content="male" HorizontalAlignment="Left" Margin="338,130,0,0" VerticalAlignment="Top" FontFamily="Inter Regular" FontSize="20" Foreground="#FFD9D9D9" Background="White" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="6,-3,0,0"/>
-        <TextBox x:Name="tbAge" HorizontalAlignment="Left" Margin="216,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="62" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="tbHeight" HorizontalAlignment="Left" Margin="216,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="tbWeight" HorizontalAlignment="Left" Margin="216,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="197,360,0,0" VerticalAlignment="Top" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Semibold" Width="162" Height="44" FontSize="20" BorderThickness="2,2,2,2" Click="btnCalculate_Click">
+        <Label x:Name="lblSex" Content="sex:" HorizontalAlignment="Left" Margin="77,122,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontSize="22.5" FontFamily="Inter Semibold"/>
+        <Label x:Name="lblAge" Content="age:" HorizontalAlignment="Left" Margin="75,168,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontSize="22.5" FontFamily="Inter Semibold"/>
+        <Label x:Name="lblHeight" Content="height (cm):" HorizontalAlignment="Left" Margin="31,228,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontWeight="semibold" FontSize="22.5" FontFamily="Inter Semibold"/>
+        <Label x:Name="lblWeight" Content="weight (kg):" HorizontalAlignment="Left" Margin="31,288,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontWeight="semibold" FontSize="22.5" FontFamily="Inter Semibold" Grid.RowSpan="2"/>
+        <RadioButton x:Name="rbtnFem" GroupName="sex" Content="female" Margin="204,130,0,0" VerticalAlignment="Top" FontFamily="Inter Regular" FontSize="20" Foreground="#FFD9D9D9" Background="White" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="2,-3,0,0" IsChecked="True" HorizontalAlignment="Left" Width="91"/>
+        <RadioButton x:Name="rbtnMale" GroupName="sex" Content="male" HorizontalAlignment="Left" Margin="327,130,0,0" VerticalAlignment="Top" FontFamily="Inter Regular" FontSize="20" Foreground="#FFD9D9D9" Background="White" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="2,-3,0,0" Width="74"/>
+        <TextBox x:Name="tbAge" HorizontalAlignment="Left" Margin="206,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="62" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <TextBox x:Name="tbHeight" HorizontalAlignment="Left" Margin="206,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" MaxLines="1"/>
+        <TextBox x:Name="tbWeight" HorizontalAlignment="Left" Margin="206,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2" FontSize="18" MaxLines="1"/>
+        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="187,61,0,0" VerticalAlignment="Top" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Semibold" Width="162" Height="44" FontSize="20" BorderThickness="2,2,2,2" Click="btnCalculate_Click" Grid.Row="1">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF707070" Opacity="0"/>
             </Button.BorderBrush>
@@ -27,12 +31,10 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="lblBMI" Content="BMI: ___________" HorizontalAlignment="Left" Margin="455,124,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontFamily="Inter Semibold" FontSize="22.5" Width="132"/>
-        <Label x:Name="lblBMI_Copy" Content="Daily calorie intake: ___________" HorizontalAlignment="Left" Margin="455,178,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontFamily="Inter Semibold" FontSize="22.5" Width="302"/>
-        <TextBox x:Name="tbBMI" HorizontalAlignment="Left" Margin="513,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65" Height="26" FontFamily="Inter Regular" FontSize="20" Background="{x:Null}" BorderThickness="0,0,0,0"/>
-        <TextBox x:Name="tbCal" HorizontalAlignment="Left" Margin="677,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65" Height="24" FontFamily="Inter Regular" FontSize="20" Background="{x:Null}" BorderThickness="0,0,0,0"/>
-        <TextBlock x:Name="tblCategory" HorizontalAlignment="Left" Margin="460,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFB7BF96" Height="96" Width="223" Padding="9,9,0,0" Foreground="#FF3E3B3B" FontFamily="Inter Regular" FontSize="13"><Run/><LineBreak/><Run Text="Underweight = &lt;18.5"/><LineBreak/><Run Text="Normal weight = 18.5–24.9"/><LineBreak/><Run Text="Overweight = 25–29.9"/><LineBreak/><Run Text="Obesity = BMI of 30 or greater"/></TextBlock>
-        <Button x:Name="btnRecipeRecc" Content="Recipe recommendation" HorizontalAlignment="Left" Margin="430,360,0,0" VerticalAlignment="Top" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Semibold" Width="327" Height="44" FontSize="20" BorderThickness="2,2,2,2" Click="Recipe_Click">
+        <Label x:Name="lblBMI" Content="BMI: _______________" HorizontalAlignment="Left" Margin="433,124,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontFamily="Inter Semibold" FontSize="22.5" Width="165"/>
+        <Label x:Name="lblBMI_Copy" Content="Daily calories intake: __________________" HorizontalAlignment="Left" Margin="433,178,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontFamily="Inter Semibold" FontSize="22.5" Width="345"/>
+        <TextBlock x:Name="tblCategory" HorizontalAlignment="Left" Margin="438,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFB7BF96" Height="96" Width="223" Padding="9,9,0,0" Foreground="#FF3E3B3B" FontFamily="Inter Regular" FontSize="13" Grid.RowSpan="2"><Run/><LineBreak/><Run Text="Underweight = &lt;18.5"/><LineBreak/><Run Text="Normal weight = 18.5–24.9"/><LineBreak/><Run Text="Overweight = 25–29.9"/><LineBreak/><Run Text="Obesity = BMI of 30 or greater"/></TextBlock>
+        <Button x:Name="btnRecipeRecc" Content="Recipe recommendation" HorizontalAlignment="Left" Margin="408,61,0,0" VerticalAlignment="Top" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Semibold" Width="327" Height="44" FontSize="20" BorderThickness="2,2,2,2" Click="Recipe_Click" Grid.Row="1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -42,7 +44,7 @@
                 <SolidColorBrush Color="#FF707070" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <Label x:Name="lblBMICat" Content="BMI Categories" HorizontalAlignment="Left" Margin="464,238,0,0" VerticalAlignment="Top" Foreground="#FF3E3B3B" FontFamily="Inter Bold" FontWeight="Bold"/>
+        <Label x:Name="lblBMICat" Content="BMI Categories" HorizontalAlignment="Left" Margin="442,238,0,0" VerticalAlignment="Top" Foreground="#FF3E3B3B" FontFamily="Inter Bold" FontWeight="Bold"/>
         <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="26,30,0,0" VerticalAlignment="Top" Click="Home_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -53,6 +55,8 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
+        <TextBlock x:Name="tbBMI" HorizontalAlignment="Left" Margin="491,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="81" Height="26" FontFamily="Inter Semibold" FontSize="20" Background="{x:Null}" Foreground="#FFD9D9D9" TextAlignment="Center"/>
+        <TextBlock x:Name="tbCal" Margin="668,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="24" FontFamily="Inter Semibold" FontSize="20" Background="{x:Null}" Foreground="#FFD9D9D9" TextAlignment="Center" HorizontalAlignment="Left" Width="95"/>
 
     </Grid>
 </Window>

@@ -9,10 +9,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/Npgsql.dll": {}
+          "lib/netcoreapp3.1/Npgsql.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/Npgsql.dll": {}
+          "lib/netcoreapp3.1/Npgsql.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -22,10 +26,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -43,10 +51,14 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -158,19 +170,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hervipros\\.nuget\\packages\\": {}
+    "C:\\Users\\nrwfe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
+      "projectUniqueName": "C:\\Users\\nrwfe\\Dietalicious\\UsersnrwfeDietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
       "projectName": "Dietalicious",
-      "projectPath": "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
-      "packagesPath": "C:\\Users\\hervipros\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\obj\\",
+      "projectPath": "C:\\Users\\nrwfe\\Dietalicious\\UsersnrwfeDietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
+      "packagesPath": "C:\\Users\\nrwfe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nrwfe\\Dietalicious\\UsersnrwfeDietalicious\\Dietalicious\\Dietalicious\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hervipros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nrwfe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -207,7 +219,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -219,7 +232,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
