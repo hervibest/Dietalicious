@@ -1,0 +1,34 @@
+﻿<Window x:Class="Dietalicious.SearchRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dietalicious"
+        mc:Ignorable="d"
+        Title="SearchRecipe" Height="450" Width="800">
+    <Grid Background="#E4DEAE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="593*"/>
+            <ColumnDefinition Width="207*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="355,77,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.ColumnSpan="2"/>
+        <Grid Background="#133A1B" HorizontalAlignment="Left" Height="255" Margin="74,119,0,0" VerticalAlignment="Top" Width="652" Grid.ColumnSpan="2"/>
+        <Grid HorizontalAlignment="Left" Height="205" Background="#B7BF96" Margin="341,152,0,0" VerticalAlignment="Top" Width="132">
+            <Grid HorizontalAlignment="Left" Height="122" Margin="332,4,0,0" VerticalAlignment="Top" Width="132"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Background="#B7BF96"  Height="205" Margin="137,152,0,0" VerticalAlignment="Top" Width="132">
+            <Button Content="Button" HorizontalAlignment="Left" Margin="43,153,0,0" VerticalAlignment="Top" Click="Recipe_Click"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Background="#B7BF96"  Height="205" Margin="541,152,0,0" VerticalAlignment="Top" Width="132" Grid.ColumnSpan="2"/>
+        <Label Foreground="White" Content="Hasil Pencarian&#xD;&#xA;" Margin="355,123,102,282"/>
+        <Grid HorizontalAlignment="Left"  Background="#B1B1B1"  Height="70" Margin="162,184,0,0" VerticalAlignment="Top" Width="82"/>
+        <Grid HorizontalAlignment="Left"  Background="#B1B1B1"  Height="70" Margin="366,184,0,0" VerticalAlignment="Top" Width="82"/>
+        <Grid HorizontalAlignment="Left"  Background="#B1B1B1"  Height="70" Margin="566,184,0,0" VerticalAlignment="Top" Width="82" Grid.ColumnSpan="2"/>
+        <Label Content="Nama Resep" Margin="168,270,289,135"/>
+        <Label Content="Nama Resep&#xD;&#xA;" Margin="371,270,86,135"/>
+        <Label Content="Nama Resep&#xD;&#xA;" Margin="573,270,91,135" Grid.ColumnSpan="2"/>
+        <Label Content="Search Recipe :" Margin="203,73,254,332"/>
+
+
+    </Grid>
+</Window>
