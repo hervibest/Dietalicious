@@ -170,19 +170,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nrwfe\\.nuget\\packages\\": {}
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nrwfe\\Dietalicious\\UsersnrwfeDietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
+      "projectUniqueName": "C:\\Users\\Thinkpad\\Source\\Repos\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
       "projectName": "Dietalicious",
-      "projectPath": "C:\\Users\\nrwfe\\Dietalicious\\UsersnrwfeDietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
-      "packagesPath": "C:\\Users\\nrwfe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nrwfe\\Dietalicious\\UsersnrwfeDietalicious\\Dietalicious\\Dietalicious\\obj\\",
+      "projectPath": "C:\\Users\\Thinkpad\\Source\\Repos\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
+      "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Thinkpad\\Source\\Repos\\Dietalicious\\Dietalicious\\Dietalicious\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nrwfe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

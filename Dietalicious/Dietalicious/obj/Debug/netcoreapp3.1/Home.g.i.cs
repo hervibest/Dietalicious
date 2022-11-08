@@ -53,7 +53,7 @@ namespace Dietalicious {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Dietalicious;component/home.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Dietalicious;V1.0.0.0;component/home.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Home.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
