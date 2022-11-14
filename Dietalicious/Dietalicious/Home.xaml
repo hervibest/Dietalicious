@@ -20,6 +20,7 @@
         <Button Content="Account" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="597,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="Account_Click"/>
         <Button Content="BMI" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Center" Height="28" Margin="0,30,0,0" VerticalAlignment="Top" Width="46" FontSize="16" FontWeight="Bold"  Click="BMI_Click" />
         <Button Content="Sign Out" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="705,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="SignOut_Click"/>
+        <Label x:Name="lblTest" Content="TEST" HorizontalAlignment="Left" Margin="213,328,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

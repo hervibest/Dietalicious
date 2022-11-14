@@ -41,6 +41,7 @@ namespace Dietalicious
         {
             try
             {
+                
              
                     conn.Open();
                     sql = @"select * from st_logins(:_user_name  ,:_password)";
@@ -51,7 +52,10 @@ namespace Dietalicious
                     if ((int)cmd.ExecuteScalar() == 1)
                     {
                         MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
-                        conn.Close();
+                    Global.UserName = new User(tbUsername.Text, tbPassword.Password);
+                    MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
+                    conn.Close();
+
                     Hide();
                     Home home = new Home();
                     home.Show();
