@@ -15,15 +15,15 @@
         <Label x:Name="lblSettingsTitle" Content="Settings" HorizontalAlignment="Left" Margin="35,19,0,0" VerticalAlignment="Top" Foreground="#FF1E1E1E" FontFamily="Inter Extrabold" FontSize="32" Grid.RowSpan="2">
 
         </Label>
-        <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" Margin="82,107,0,0" VerticalAlignment="Top" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1"/>
-        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="82,152,0,192" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Grid.Row="1"/>
-        <Label x:Name="lblPassword" Content="Change password" HorizontalAlignment="Left" Margin="82,199,0,0" VerticalAlignment="Top" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1"/>
-        <Label x:Name="lblBMI" Content="BMI" HorizontalAlignment="Left" Margin="82,240,0,0" VerticalAlignment="Top" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1"/>
-        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Margin="347,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" Grid.Row="1"/>
-        <PasswordBox x:Name="tbPass" HorizontalAlignment="Left" Margin="347,204,0,0" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" MaxLength="15" PasswordChar="*" Grid.Row="1"/>
-        <TextBox x:Name="tbBMI" HorizontalAlignment="Left" Margin="347,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" Grid.Row="1"/>
-        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="347,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" Grid.Row="1"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="173,315,0,28" Click="Save_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Width="152" FontSize="15" BorderThickness="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1">
+        <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" Margin="82,75,0,0" VerticalAlignment="Top" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1"/>
+        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="82,120,0,0" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Grid.Row="1" Height="37" VerticalAlignment="Top"/>
+        <Label x:Name="lblPassword" Content="Change password" HorizontalAlignment="Left" Margin="82,167,0,0" VerticalAlignment="Top" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1"/>
+        <Label x:Name="lblBMI" Content="BMI" HorizontalAlignment="Left" Margin="82,208,0,0" VerticalAlignment="Top" Foreground="#FFB7BF96" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Margin="347,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" Grid.Row="1"/>
+        <PasswordBox x:Name="tbPass" HorizontalAlignment="Left" Margin="347,172,0,0" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" MaxLength="15" PasswordChar="*" Grid.Row="1"/>
+        <TextBox x:Name="tbBMI" HorizontalAlignment="Left" Margin="347,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" Grid.Row="1"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="347,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="27" FontFamily="Inter Regular" FontSize="18" Grid.Row="1"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="173,315,0,0" Click="Save_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Width="152" FontSize="15" BorderThickness="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Height="38" VerticalAlignment="Top">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -33,7 +33,7 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <Button x:Name="btnCancel" Content="Cancel" Margin="476,315,173,28" Click="Cancel_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" FontSize="15" BorderThickness="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1">
+        <Button x:Name="btnCancel" Content="Cancel" Margin="476,315,173,0" Click="Cancel_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" FontSize="15" BorderThickness="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Height="38" VerticalAlignment="Top">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>

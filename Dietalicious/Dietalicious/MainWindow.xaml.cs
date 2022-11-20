@@ -41,17 +41,15 @@ namespace Dietalicious
         {
             try
             {
+                conn.Open();
+                sql = @"select * from st_logins(:_user_name  ,:_password)";
+                cmd = new NpgsqlCommand(sql, conn);
                 
-             
-                    conn.Open();
-                    sql = @"select * from st_logins(:_user_name  ,:_password)";
-                    cmd = new NpgsqlCommand(sql, conn);
-
-                    cmd.Parameters.AddWithValue("_user_name", tbUsername.Text);
-                    cmd.Parameters.AddWithValue("_password", tbPassword.Password);
-                    if ((int)cmd.ExecuteScalar() == 1)
-                    {
-                        MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
+                cmd.Parameters.AddWithValue("_user_name", tbUsername.Text);
+                cmd.Parameters.AddWithValue("_password", tbPassword.Password);
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
                     Global.UserName = new User(tbUsername.Text, tbPassword.Password);
                     MessageBox.Show($"Selamat datang {tbUsername.Text}" );
                     conn.Close();
@@ -65,7 +63,6 @@ namespace Dietalicious
                     MessageBox.Show("User belum dibuat atau Password Salah");
                 }
                     conn.Close();
-                
                 
             }
 
