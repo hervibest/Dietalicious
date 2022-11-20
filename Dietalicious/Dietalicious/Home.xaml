@@ -13,14 +13,18 @@
             </Rectangle.Fill>
         </Rectangle>
         <Label Content="Home" HorizontalAlignment="Left" Height="66" Margin="10,11,0,0" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="173" Margin="26,139,0,0" VerticalAlignment="Top" Width="326" Source="Screenshot_2022-11-01_001615-removebg-preview.png"/>
+        <Image Width="326" HorizontalAlignment="Left" Height="173" Margin="26,139,0,0" VerticalAlignment="Top" >
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="326" UriSource="/Resources/logo.png" />
+            </Image.Source>
+        </Image>
         <Label Content="Welcome, _______________!" HorizontalAlignment="Left" Height="55" Margin="370,139,0,0" VerticalAlignment="Top" Width="362" FontSize="36" Foreground="#FF133A1B" FontWeight="Bold"/>
         <Label Content="Dietalicious merupakan aplikasi meal planner&#xD;&#xA;yang membantu dalam perencanaan makanan&#xD;&#xA;Anda. Aplikasi ini dilengkapi dengan&#xD;&#xA;fitur perhitungan BMI, pencarian resep &#xD;&#xA;berdasarkan kalori dan list favorit resep Anda." HorizontalAlignment="Left" Height="166" Margin="370,199,0,0" VerticalAlignment="Top" Width="377" FontSize="18" Foreground="#FF133A1B"/>
         <Button Content="Recipe" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="464,30,0,0" VerticalAlignment="Top" Width="94" FontSize="16" FontWeight="Bold" Click="Recipe_Click"/>
         <Button Content="Account" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="597,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="Account_Click"/>
-        <Button Content="BMI" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Center" Height="28" Margin="0,30,0,0" VerticalAlignment="Top" Width="46" FontSize="16" FontWeight="Bold"  Click="BMI_Click" />
+        <Button Content="BMI" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Center" Height="28" Margin="0,30,0,0" VerticalAlignment="Top" Width="46" FontSize="16" FontWeight="Bold"  Click="BMI_Click"/>
         <Button Content="Sign Out" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="705,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="SignOut_Click"/>
-        <Label x:Name="lblTest" Content="TEST" HorizontalAlignment="Left" Margin="213,328,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbUsn" HorizontalAlignment="Left" Margin="558,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="95" Height="26" FontFamily="Inter Semibold" FontSize="36" Background="{x:Null}" Foreground="#FFD9D9D9" TextAlignment="Center"/>
 
     </Grid>
 </Window>

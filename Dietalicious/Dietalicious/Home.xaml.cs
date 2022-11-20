@@ -13,7 +13,6 @@ using System.Net.Http;
 using System.Diagnostics;
 using RestSharp;
 using Newtonsoft.Json;
-using System.Diagnostics;
 namespace Dietalicious
 {
     /// <summary>
@@ -59,7 +58,7 @@ namespace Dietalicious
                 Console.WriteLine(body);
             
                 //var list = JsonConvert.DeserializeObject<List<ThirdPartySuggester>>(body);
-                lblTest.Content = body;
+                //lblTest.Content = body;
 
 
 
