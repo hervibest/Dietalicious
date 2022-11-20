@@ -28,6 +28,8 @@
         <Label Content="Nama Resep&#xD;&#xA;" Margin="371,270,86,135"/>
         <Label Content="Nama Resep&#xD;&#xA;" Margin="573,270,91,135" Grid.ColumnSpan="2"/>
         <Label Content="Search Recipe :" Margin="203,73,254,332"/>
+        <DataGrid x:Name="dgvData" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="207" Margin="72,198,0,0" VerticalAlignment="Top" Width="656"/>
+        <Label x:Name="lbl" Content="Label"/>
 
 
     </Grid>
