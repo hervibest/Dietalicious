@@ -11,7 +11,7 @@
             <ColumnDefinition Width="593*"/>
             <ColumnDefinition Width="207*"/>
         </Grid.ColumnDefinitions>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="355,77,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TbCalories" HorizontalAlignment="Left" Height="21" Margin="355,77,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.ColumnSpan="2"/>
         <Grid Background="#133A1B" HorizontalAlignment="Left" Height="255" Margin="74,119,0,0" VerticalAlignment="Top" Width="652" Grid.ColumnSpan="2"/>
         <Grid HorizontalAlignment="Left" Height="205" Background="#B7BF96" Margin="341,152,0,0" VerticalAlignment="Top" Width="132">
             <Grid HorizontalAlignment="Left" Height="122" Margin="332,4,0,0" VerticalAlignment="Top" Width="132"/>
