@@ -46,7 +46,7 @@ namespace Dietalicious
         public SearchRecipe()
         {
             InitializeComponent();
-            GetAPIfromName();
+            //GetAPIfromName();
 
         }
         private async void GetAPIfromName()
