@@ -18,9 +18,36 @@
         <Label x:Name="lblWeight" Content="weight (kg):" HorizontalAlignment="Left" Margin="31,288,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontWeight="semibold" FontSize="22.5" FontFamily="Inter Semibold" Grid.RowSpan="2"/>
         <RadioButton x:Name="rbtnFem" GroupName="sex" Content="female" Margin="204,130,0,0" VerticalAlignment="Top" FontFamily="Inter Regular" FontSize="20" Foreground="#FFD9D9D9" Background="White" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="2,-3,0,0" IsChecked="True" HorizontalAlignment="Left" Width="91"/>
         <RadioButton x:Name="rbtnMale" GroupName="sex" Content="male" HorizontalAlignment="Left" Margin="327,130,0,0" VerticalAlignment="Top" FontFamily="Inter Regular" FontSize="20" Foreground="#FFD9D9D9" Background="White" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="2,-3,0,0" Width="74"/>
-        <TextBox x:Name="tbAge" HorizontalAlignment="Left" Margin="206,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="62" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
-        <TextBox x:Name="tbHeight" HorizontalAlignment="Left" Margin="206,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" MaxLines="1"/>
-        <TextBox x:Name="tbWeight" HorizontalAlignment="Left" Margin="206,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89" Height="30" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2" FontSize="18" MaxLines="1"/>
+        <TextBox x:Name="tbAge" HorizontalAlignment="Left" Margin="206,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89" Height="38" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Background="#FFB7BF96">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="tbHeight" HorizontalAlignment="Left" Margin="206,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89" Height="38" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" MaxLines="1" Background="#FFB7BF96">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="tbWeight" HorizontalAlignment="Left" Margin="206,287,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89" Height="38" FontFamily="Inter Regular" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.RowSpan="2" FontSize="18" MaxLines="1" Background="#FFB7BF96">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
         <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="187,61,0,0" VerticalAlignment="Top" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Semibold" Width="162" Height="44" FontSize="20" BorderThickness="2,2,2,2" Click="btnCalculate_Click" Grid.Row="1">
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF707070" Opacity="0"/>
