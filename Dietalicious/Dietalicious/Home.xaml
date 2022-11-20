@@ -24,7 +24,7 @@
         <Button Content="Account" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="597,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="Account_Click"/>
         <Button Content="BMI" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Center" Height="28" Margin="0,30,0,0" VerticalAlignment="Top" Width="46" FontSize="16" FontWeight="Bold"  Click="BMI_Click"/>
         <Button Content="Sign Out" Foreground="#FFE4DEAE" Background="#FF133A1B" HorizontalAlignment="Left" Height="28" Margin="705,30,0,0" VerticalAlignment="Top" Width="74" FontSize="16" FontWeight="Bold" Click="SignOut_Click"/>
-        <TextBlock x:Name="tbUsn" HorizontalAlignment="Left" Margin="558,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="95" Height="26" FontFamily="Inter Semibold" FontSize="36" Background="{x:Null}" Foreground="#FFD9D9D9" TextAlignment="Center"/>
+        <TextBlock x:Name="tbUsn" HorizontalAlignment="Left" Margin="558,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" Height="41" FontFamily="Inter Semibold" FontSize="32" Background="{x:Null}" Foreground="#FF133A1B" TextAlignment="Center"/>
 
     </Grid>
 </Window>
