@@ -21,5 +21,12 @@ namespace Dietalicious
         {
             InitializeComponent();
         }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            Home home = new Home();
+            home.Show();
+        }
     }
 }

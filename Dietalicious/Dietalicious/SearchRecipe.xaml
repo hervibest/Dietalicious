@@ -29,7 +29,18 @@
         <Label Content="Nama Resep&#xD;&#xA;" Margin="573,270,91,135" Grid.ColumnSpan="2"/>
         <Label Content="Search Recipe :" Margin="203,73,254,332"/>
         <DataGrid x:Name="dgvData" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="207" Margin="72,198,0,0" VerticalAlignment="Top" Width="656"/>
-        <Label x:Name="lbl" Content="Label"/>
+        <Label x:Name="lbl">
+            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Home_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+                </Button.BorderBrush>
+            </Button>
+        </Label>
 
 
     </Grid>

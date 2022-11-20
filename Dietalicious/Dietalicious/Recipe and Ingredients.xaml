@@ -11,7 +11,18 @@
             <ColumnDefinition Width="479*"/>
             <ColumnDefinition Width="321*"/>
         </Grid.ColumnDefinitions>
-        <Grid HorizontalAlignment="Left" Background="#133A1B" Height="366" VerticalAlignment="Center" Width="724" Grid.ColumnSpan="2" Margin="38,0,0,0"/>
+        <Grid HorizontalAlignment="Left" Background="#133A1B" Height="366" VerticalAlignment="Center" Width="724" Grid.ColumnSpan="2" Margin="38,0,0,0">
+            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="609,39,0,0" VerticalAlignment="Top" Click="Home_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+                </Button.BorderBrush>
+            </Button>
+        </Grid>
         <Label Foreground="White" Content="Lorem Ipsum is simply dummy text of the printing &#xD;&#xA;and typesetting industry. &#xA;Lorem Ipsum is simply dummy text of the printing and &#xD;&#xA;typesetting industry. &#xD;&#xA;Lorem Ipsum has been the industry's standard dummy&#xD;&#xA; text ever since the 1500s, when an &#xD;&#xA;unknown printer took a galley of type&#xD;&#xA; and scrambled it to make a type specimen book.&#xD;&#xA;has survived not only five centuries," Margin="351,114,143,184" Grid.ColumnSpan="2"/>
         <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="173" Margin="82,76,0,0" VerticalAlignment="Top" Width="205"/>
         <Grid Background="#B7BF96" HorizontalAlignment="Left" Height="22" Margin="104,254,0,0" VerticalAlignment="Top" Width="162"/>

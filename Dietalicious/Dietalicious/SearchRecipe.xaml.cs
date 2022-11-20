@@ -86,5 +86,12 @@ namespace Dietalicious
             Recipe_and_Ingredients recipe = new Recipe_and_Ingredients();
             recipe.Show();
         }
+        
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            Home home = new Home();
+            home.Show();
+        }
     }
 }
