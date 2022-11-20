@@ -38,11 +38,11 @@ namespace Dietalicious
                 conn.Open();
                 sql = @"select * from st_update(:_user_name,:_name,:_email,:_new_password,:_bmi)";
                 cmd = new NpgsqlCommand(sql, conn);
-
-                cmd.Parameters.AddWithValue("_user_name", tbUsn.Text);
+                string Username = Global.UserName.getUserName();
+                cmd.Parameters.AddWithValue("_user_name", Username);
                 cmd.Parameters.AddWithValue("_name", tbName.Text);
                 cmd.Parameters.AddWithValue("_email", tbEmail.Text);
-                cmd.Parameters.AddWithValue("_password", tbPass.Password);
+                cmd.Parameters.AddWithValue("_new_password", tbPass.Password);
                 cmd.Parameters.AddWithValue("_bmi", tbBMI.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
