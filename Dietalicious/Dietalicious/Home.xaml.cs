@@ -55,7 +55,7 @@ namespace Dietalicious
             {   
 
                 response.EnsureSuccessStatusCode();
-             var body = await response.Content.ReadAsStringAsync();
+                var body = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(body);
             
                 //var list = JsonConvert.DeserializeObject<List<ThirdPartySuggester>>(body);
