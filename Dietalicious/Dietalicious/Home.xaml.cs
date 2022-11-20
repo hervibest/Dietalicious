@@ -35,7 +35,7 @@ namespace Dietalicious
         public Home()
         {
             InitializeComponent();
-            GetAPI();
+            //GetAPI();
             tbUsn.Text = Global.UserName.getUserName();
         }
         private  async void  GetAPI()
@@ -99,6 +99,7 @@ namespace Dietalicious
         private void SignOut_Click(object sender, RoutedEventArgs e)
         {
             Hide();
+            Global.UserName.deleteUserName();
             MainWindow signUp = new MainWindow();
             signUp.Show();
         }

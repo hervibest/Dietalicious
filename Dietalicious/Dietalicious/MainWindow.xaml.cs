@@ -53,7 +53,7 @@ namespace Dietalicious
                     {
                         MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
                     Global.UserName = new User(tbUsername.Text, tbPassword.Password);
-                    MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
+                    MessageBox.Show($"Selamat datang {tbUsername.Text}" );
                     conn.Close();
 
                     Hide();
