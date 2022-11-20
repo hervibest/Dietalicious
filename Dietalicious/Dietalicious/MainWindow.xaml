@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF133A1B">
         <Label Content="Login" HorizontalAlignment="Center" Height="66" Margin="0,59,0,0" VerticalAlignment="Top" Width="102" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
-        <TextBox x:Name="tbUsername" Background="#E4DEAE" HorizontalAlignment="Center" Height="33" Margin="0,153,0,0" TextWrapping="Wrap" Text="  Username" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B">
+        <TextBox x:Name="tbUsername" Background="#E4DEAE" HorizontalAlignment="Center" Height="33" Margin="0,153,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" VerticalContentAlignment="Center">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -38,7 +38,7 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <PasswordBox x:Name="tbPassword" Background="#E4DEAE" HorizontalAlignment="Center" Height="33" Margin="0,217,0,0" Password="Password" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" BorderThickness="1,1,0,1">
+        <PasswordBox x:Name="tbPassword" Background="#E4DEAE" HorizontalAlignment="Center" Height="33" Margin="0,217,0,0" Password="Password" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" BorderThickness="1,1,0,1" VerticalContentAlignment="Center">
             <PasswordBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
