@@ -21,6 +21,11 @@ namespace Dietalicious
         {
             return userName;
         }
+        public virtual void deleteUserName()
+        {
+            userName = "";
+           
+        }
         public virtual void login()
         {
 
