@@ -80,7 +80,7 @@ namespace Dietalicious
                 cmd2.Parameters.AddWithValue("_sex", true); 
                 if ((int)cmd2.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("BMI berhasil ditambahkan", "Well Done!");
+                    MessageBox.Show("BMI berhasil ditambahkan", "Success");
 
 
                     conn.Close();
@@ -90,7 +90,7 @@ namespace Dietalicious
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Calculation failure!");
+                MessageBox.Show("Error: " + ex.Message, "Calculation failed!");
             }
         }
         private void Home_Click(object sender, RoutedEventArgs e)

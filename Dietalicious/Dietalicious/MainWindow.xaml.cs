@@ -49,9 +49,9 @@ namespace Dietalicious
                 cmd.Parameters.AddWithValue("_password", tbPassword.Password);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Data Users berhasil ditemukan", "Well Done!");
+                    MessageBox.Show("Data user berhasil ditemukan", "Login successful");
                     Global.UserName = new User(tbUsername.Text, tbPassword.Password);
-                    MessageBox.Show($"Selamat datang {tbUsername.Text}" );
+                    MessageBox.Show($"Selamat datang {tbUsername.Text}!", "Welcome" );
                     conn.Close();
 
                     Hide();
@@ -60,7 +60,7 @@ namespace Dietalicious
                 }
                 else
                 {
-                    MessageBox.Show("User belum dibuat atau Password Salah");
+                    MessageBox.Show("User belum dibuat atau password salah", "Login failed");
                 }
                     conn.Close();
                 
@@ -68,7 +68,7 @@ namespace Dietalicious
 
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "Login FAIL!!");
+                MessageBox.Show("Error:" + ex.Message, "Login error");
             }
             
         }

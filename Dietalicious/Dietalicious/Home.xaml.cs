@@ -84,7 +84,6 @@ namespace Dietalicious
         private void BMI_Click(object sender, RoutedEventArgs e)
         {
             string Username = Global.UserName.getUserName();
-            MessageBox.Show(Username);
             Hide();
             BMI bmi = new BMI();
             bmi.Show();
@@ -99,7 +98,7 @@ namespace Dietalicious
         private void SignOut_Click(object sender, RoutedEventArgs e)
         {
             Hide();
-            Global.UserName.deleteUserName();
+            //Global.UserName.deleteUserName();
             MainWindow signUp = new MainWindow();
             signUp.Show();
         }
