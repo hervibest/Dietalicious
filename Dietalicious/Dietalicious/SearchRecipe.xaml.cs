@@ -140,7 +140,7 @@ namespace Dietalicious
 
         private void buttonSearch_Click(object sender, RoutedEventArgs e)
         {
-            GetAPI();
+            //GetAPI();
         }
         private void Home_Click(object sender, RoutedEventArgs e)
         {
