@@ -102,7 +102,7 @@ namespace Dietalicious
         private void Recipe_Click(object sender, RoutedEventArgs e)
         {
             Hide();
-            Recipe_and_Ingredients recipe = new Recipe_and_Ingredients();
+            Recipe_and_Ingredients recipe = new Recipe_and_Ingredients("55");
             recipe.Show();
         }
     }

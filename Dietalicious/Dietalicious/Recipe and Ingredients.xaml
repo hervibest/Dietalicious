@@ -22,9 +22,10 @@
                     <SolidColorBrush Color="#FF011B10" Opacity="0"/>
                 </Button.BorderBrush>
             </Button>
+            <Label Content="Label" HorizontalAlignment="Left" Height="16" Margin="391,242,0,0" VerticalAlignment="Top" Width="114"/>
+            <Image x:Name="myImage"  HorizontalAlignment="Left" Height="152" Margin="87,39,0,0" VerticalAlignment="Top" Width="152"/>
+            <TextBlock x:Name="TxtBoxData" HorizontalAlignment="Left" Height="142" Margin="336,95,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="358"/>
         </Grid>
-        <Label Foreground="White" Content="Lorem Ipsum is simply dummy text of the printing &#xD;&#xA;and typesetting industry. &#xA;Lorem Ipsum is simply dummy text of the printing and &#xD;&#xA;typesetting industry. &#xD;&#xA;Lorem Ipsum has been the industry's standard dummy&#xD;&#xA; text ever since the 1500s, when an &#xD;&#xA;unknown printer took a galley of type&#xD;&#xA; and scrambled it to make a type specimen book.&#xD;&#xA;has survived not only five centuries," Margin="351,114,143,184" Grid.ColumnSpan="2"/>
-        <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="173" Margin="82,76,0,0" VerticalAlignment="Top" Width="205"/>
         <Grid Background="#B7BF96" HorizontalAlignment="Left" Height="22" Margin="104,254,0,0" VerticalAlignment="Top" Width="162"/>
         <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="101" Margin="104,293,0,0" VerticalAlignment="Top" Width="108"/>
         <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="101" Margin="228,293,0,0" VerticalAlignment="Top" Width="108"/>
@@ -33,7 +34,7 @@
         <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="101" Margin="144,293,0,0" VerticalAlignment="Top" Width="108" Grid.Column="1"/>
         <Label Foreground="DarkGreen"  Content="Add to Favorites" Margin="142,251,201,171"/>
         <Label Foreground="DarkGreen" Content="Add to Favorites" Margin="133,251,243,158"/>
-        <Label Foreground="White" Content="Nama Resep" Margin="358,64,286,325" FontSize="25" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblResep" Foreground="White" Content="Nama Resep" Margin="358,64,286,325" FontSize="25" FontWeight="Bold" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

@@ -9,7 +9,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Net.Http;
+using System.Data;
 
+using Newtonsoft.Json.Linq;
+using System.Text.Json;
 namespace Dietalicious
 {
     /// <summary>
@@ -17,9 +21,23 @@ namespace Dietalicious
     /// </summary>
     public partial class Recipe_and_Ingredients : Window
     {
-        public Recipe_and_Ingredients()
+        public class RecipeID
+        {
+            public string instructions { get; set; }
+            public string title { get; set; }
+            public string image { get; set; }
+            public string type { get; set; }
+            public string sourceUrl { get; set; }
+            public int calories { get; set; }
+            public string protein { get; set; }
+            public string fat { get; set; }
+            public string carbs { get; set; }
+            
+        }
+        public Recipe_and_Ingredients(string ID)
         {
             InitializeComponent();
+            GetAPI(ID);
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -28,5 +46,49 @@ namespace Dietalicious
             Home home = new Home();
             home.Show();
         }
+        private async void GetAPI(string ID)
+        {
+            string Input = ID;
+            var client = new HttpClient();
+
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/{ID}/information"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "f47554ac2fmsh3315b39d04d3f19p1a81eajsnf816b87369c7" },
+        { "X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com" },
+    },
+
+            };
+            using (var response = await client.SendAsync(request))
+            {
+         
+            
+
+               
+
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                RecipeID recipe = JsonSerializer.Deserialize<RecipeID>(body);
+                Console.WriteLine(body);
+                lblResep.Content = recipe.title;
+                TxtBoxData.Text = recipe.instructions;
+                myImage.Source = new BitmapImage(new Uri($@"{recipe.image}", UriKind.RelativeOrAbsolute));
+                MessageBox.Show(body);
+
+
+
+
+
+            }
+
+
+
+        }
+
+
+
     }
 }
