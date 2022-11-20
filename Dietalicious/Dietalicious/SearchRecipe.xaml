@@ -8,18 +8,15 @@
         Title="SearchRecipe" Height="450" Width="800">
     <Grid Background="#E4DEAE">
         <Grid.RowDefinitions>
-            <RowDefinition Height="158*"/>
-            <RowDefinition Height="59*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="593*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="591*"/>
             <ColumnDefinition Width="207*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="TbCalories" HorizontalAlignment="Left" Height="21" Margin="355,77,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.ColumnSpan="2"/>
-        <Grid Background="#133A1B" HorizontalAlignment="Left" Height="305" Margin="10,119,0,0" VerticalAlignment="Top" Width="780" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Label Foreground="White" Content="Hasil Pencarian&#xD;&#xA;" Margin="355,123,102,164"/>
-        <Label Content="Search Recipe :" Margin="203,73,254,214"/>
-        <Label x:Name="lbl" Margin="0,0,471,137">
+        <Label x:Name="lbl" Margin="0,0,471,137" Grid.ColumnSpan="2">
             <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Home_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -31,9 +28,22 @@
                 </Button.BorderBrush>
             </Button>
         </Label>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="116,47,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="355,31,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
-        <DataGrid x:Name="dtGrid2" Margin="61,152,51,16" Grid.RowSpan="2" SelectionChanged="dtGrid2_SelectionChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TbCalories" HorizontalAlignment="Left" Height="21" Margin="353,77,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.ColumnSpan="2" TextChanged="TbCalories_TextChanged" Grid.Column="1"/>
+        <Grid Background="#133A1B" HorizontalAlignment="Left" Margin="8,119,0,0" Width="780" Grid.ColumnSpan="2" Height="305" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Foreground="White" Content="Hasil Pencarian&#xA;" Margin="353,123,0,0" HorizontalAlignment="Left" Width="136" Height="29" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Search Recipe:" Margin="201,73,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="353,31,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Grid.Column="1"/>
+        <Button Content="Search" Grid.Column="2" Margin="85,31,37,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="39" FontSize="15" BorderThickness="2,2,2,2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <DataGrid x:Name="dtGrid2" Margin="59,152,0,0" SelectionChanged="dtGrid2_SelectionChanged" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="688" Height="266" VerticalAlignment="Top" Grid.Column="1"/>
 
 
     </Grid>

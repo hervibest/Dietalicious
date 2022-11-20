@@ -20,7 +20,7 @@
         </Image>
         <Label Content="Welcome, _______________!" HorizontalAlignment="Right" Margin="0,139,68,0" Width="362" FontSize="36" Foreground="#FF133A1B" FontWeight="Bold" Height="55" VerticalAlignment="Top"/>
         <Label Content="Dietalicious merupakan aplikasi meal planner&#xD;&#xA;yang membantu dalam perencanaan makanan&#xD;&#xA;Anda. Aplikasi ini dilengkapi dengan&#xD;&#xA;fitur perhitungan BMI, pencarian resep &#xD;&#xA;berdasarkan kalori dan list favorit resep Anda." HorizontalAlignment="Right" Margin="0,199,53,0" Width="377" FontSize="18" Foreground="#FF133A1B" Height="166" VerticalAlignment="Top"/>
-        <Button Content="Recipe" HorizontalAlignment="Right" Margin="0,30,260,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="Recipe_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
+        <Button Content="Recipe" HorizontalAlignment="Left" Margin="446,30,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="Recipe_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -30,7 +30,7 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="Account" HorizontalAlignment="Right" Margin="0,30,140,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="Account_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
+        <Button Content="Account" HorizontalAlignment="Left" Margin="566,30,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="Account_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -50,7 +50,7 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="Sign out" HorizontalAlignment="Right" Margin="0,30,19,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="SignOut_Click" Width="95" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
+        <Button Content="Sign out" HorizontalAlignment="Left" Margin="686,30,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="SignOut_Click" Width="95" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>

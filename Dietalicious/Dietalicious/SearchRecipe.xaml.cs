@@ -186,6 +186,11 @@ namespace Dietalicious
                 MessageBox.Show(row_selected["id"].ToString());
             }
         }
+
+        private void TbCalories_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
 
