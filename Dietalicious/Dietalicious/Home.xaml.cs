@@ -36,6 +36,7 @@ namespace Dietalicious
         {
             InitializeComponent();
             GetAPI();
+            tbUsn.Text = Global.UserName.getUserName();
         }
         private  async void  GetAPI()
         {
