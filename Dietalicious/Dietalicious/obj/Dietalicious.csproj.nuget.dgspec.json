@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj": {}
+    "C:\\hervi\\project\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj": {}
   },
   "projects": {
-    "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj": {
+    "C:\\hervi\\project\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
+        "projectUniqueName": "C:\\hervi\\project\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
         "projectName": "Dietalicious",
-        "projectPath": "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
-        "packagesPath": "C:\\Users\\hervipros\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\JuniorProjs\\Diet\\Dietalicious\\Dietalicious\\Dietalicious\\obj\\",
+        "projectPath": "C:\\hervi\\project\\Dietalicious\\Dietalicious\\Dietalicious\\Dietalicious.csproj",
+        "packagesPath": "C:\\Users\\hervi\\.nuget\\packages\\",
+        "outputPath": "C:\\hervi\\project\\Dietalicious\\Dietalicious\\Dietalicious\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hervipros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hervi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
         }
       }
     }
