@@ -21,6 +21,17 @@ namespace Dietalicious
     /// </summary>
     public partial class Recipe_and_Ingredients : Window
     {
+        public class Ingredients
+        {
+           
+            public string aisle { get; set; }
+            
+            public string name { get; set; }
+            public int amount { get; set; }
+            public string unit { get; set; }
+            
+
+        }
         public class RecipeID
         {
             public string instructions { get; set; }
@@ -76,8 +87,18 @@ namespace Dietalicious
                 lblResep.Content = recipe.title;
                 TxtBoxData.Text = recipe.instructions;
                 myImage.Source = new BitmapImage(new Uri($@"{recipe.image}", UriKind.RelativeOrAbsolute));
-                MessageBox.Show(body);
 
+                dynamic ingredients = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(body);
+
+                JObject o = JObject.Parse(ingredients);
+
+                JArray a = (JArray)o["extendedIngredients"];
+
+                IList<Ingredients> person = a.ToObject<IList<Ingredients>>();
+                MessageBox.Show(body);
+                
+                dtGrid2.ItemsSource = person;
 
 
 

@@ -33,6 +33,7 @@
         <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="88" Margin="144,293,0,0" VerticalAlignment="Top" Width="108" Grid.Column="1"/>
         <Label Foreground="DarkGreen" Content="Add to Favorites" Margin="133,251,243,158"/>
         <Label x:Name="lblResep" Foreground="White" Content="Nama Resep" Margin="0,66,182,0" FontSize="25" FontWeight="Bold" Grid.ColumnSpan="2" Height="45" VerticalAlignment="Top" HorizontalAlignment="Right" Width="260"/>
+        <DataGrid x:Name="dtGrid2" Grid.ColumnSpan="2" Margin="70,276,70,-6"/>
 
     </Grid>
 </Window>
