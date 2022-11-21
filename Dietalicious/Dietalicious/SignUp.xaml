@@ -98,12 +98,12 @@
                 <DropShadowEffect/>
             </PasswordBox.Effect>
         </PasswordBox>
-        <CheckBox Name="show_Password" Unchecked="ShowPassword_Unchecked" Checked="ShowPassword_Checked" Foreground="White" Content="Show Password" HorizontalAlignment="Left" Height="17" Margin="578,226,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold">
+        <CheckBox Name="show_Password" Unchecked="ShowPassword_Unchecked" Checked="ShowPassword_Checked" Foreground="White" Content="Show Password" HorizontalAlignment="Left" Height="17" Margin="578,226,0,0" VerticalAlignment="Top" Width="154" FontWeight="Bold" Grid.ColumnSpan="2">
             <CheckBox.Effect>
                 <DropShadowEffect/>
             </CheckBox.Effect>
         </CheckBox>
-        <CheckBox Name="show_ConfirmPassword" Unchecked="ShowConfirmPassword_Unchecked" Checked="ShowConfirmPassword_Checked" Foreground="White" Content="Show Password" HorizontalAlignment="Left" Height="18" Margin="578,278,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold">
+        <CheckBox Name="show_ConfirmPassword" Unchecked="ShowConfirmPassword_Unchecked" Checked="ShowConfirmPassword_Checked" Foreground="White" Content="Show Password" HorizontalAlignment="Left" Height="18" Margin="578,278,0,0" VerticalAlignment="Top" Width="154" FontWeight="Bold" Grid.ColumnSpan="2">
             <CheckBox.Effect>
                 <DropShadowEffect/>
             </CheckBox.Effect>
