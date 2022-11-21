@@ -39,7 +39,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label x:Name="lblBMI" Content="BMI" HorizontalAlignment="Left" Margin="82,219,0,0" VerticalAlignment="Top" Foreground="#E4DEAE" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1" FontWeight="Bold" RenderTransformOrigin="0.414,0.92">
+        <Label x:Name="lblBMI" Content="BMI" HorizontalAlignment="Left" Margin="82,239,0,0" VerticalAlignment="Top" Foreground="#E4DEAE" FontFamily="Inter Medium" FontSize="20" Height="37" Grid.Row="1" FontWeight="Bold" RenderTransformOrigin="0.414,0.92">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
@@ -62,7 +62,7 @@
                 <DropShadowEffect/>
             </PasswordBox.Effect>
         </PasswordBox>
-        <TextBox x:Name="tbBMI" HorizontalAlignment="Left" Margin="347,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="32" FontFamily="Inter Regular" FontSize="18" Grid.Row="1" Foreground="#FF133A1B" Background="#E4DEAE" VerticalContentAlignment="Center">
+        <TextBox x:Name="tbBMI" HorizontalAlignment="Left" Margin="347,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355" Height="32" FontFamily="Inter Regular" FontSize="18" Grid.Row="1" Foreground="#FF133A1B" Background="#E4DEAE" VerticalContentAlignment="Center">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -127,6 +127,15 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-
+        <CheckBox Name="showPassword1" Content="Show Password" Unchecked="ShowPassword_Unchecked" Checked="ShowPassword_Checked"  Foreground="White" HorizontalAlignment="Left" Height="15" Margin="347,212,0,0" Grid.Row="1" VerticalAlignment="Top" Width="115" FontWeight="Bold">
+            <CheckBox.Effect>
+                <DropShadowEffect/>
+            </CheckBox.Effect>
+        </CheckBox>
+        <TextBox  Name="passTxtBox" Visibility="Collapsed" Background="#E4DEAE" Foreground="#FF133A1B" FontSize="16" HorizontalAlignment="Left" Height="29" Margin="347,172,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="355" VerticalContentAlignment="Center">
+        <TextBox.Effect>
+            <DropShadowEffect/>
+        </TextBox.Effect>
+        </TextBox>
     </Grid>
 </Window>

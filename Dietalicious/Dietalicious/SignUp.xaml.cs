@@ -67,18 +67,33 @@ namespace Dietalicious
         }
         private void Login(object sender, RoutedEventArgs e)
         {
-           
-
-
             Hide();
             MainWindow signUp = new MainWindow();
             signUp.Show();
-
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void ShowPassword_Checked(object sender, RoutedEventArgs e)
         {
-
+            pass_TxtBox.Text = tbPassword.Password;
+            tbPassword.Visibility = Visibility.Collapsed;
+            pass_TxtBox.Visibility = Visibility.Visible;
+        }
+        private void ShowPassword_Unchecked(object sender, RoutedEventArgs e)
+        {
+            tbPassword.Password = pass_TxtBox.Text;
+            pass_TxtBox.Visibility = Visibility.Collapsed;
+            tbPassword.Visibility = Visibility.Visible;
+        }
+        private void ShowConfirmPassword_Checked(object sender, RoutedEventArgs e)
+        {
+            confirmpass_TxtBox.Text = tbConfirmPassword.Password;
+            tbConfirmPassword.Visibility = Visibility.Collapsed;
+            confirmpass_TxtBox.Visibility = Visibility.Visible;
+        }
+        private void ShowConfirmPassword_Unchecked(object sender, RoutedEventArgs e)
+        {
+            tbConfirmPassword.Password = confirmpass_TxtBox.Text;
+            confirmpass_TxtBox.Visibility = Visibility.Collapsed;
+            tbConfirmPassword.Visibility = Visibility.Visible;
         }
     }
 }

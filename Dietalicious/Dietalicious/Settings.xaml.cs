@@ -78,5 +78,18 @@ namespace Dietalicious
             Favorites favorite = new Favorites();
             favorite.Show();
         }
+        private void ShowPassword_Checked(object sender, RoutedEventArgs e)
+        {
+            passTxtBox.Text = tbPass.Password;
+            tbPass.Visibility = Visibility.Collapsed;
+            passTxtBox.Visibility = Visibility.Visible;
+        }
+
+        private void ShowPassword_Unchecked(object sender, RoutedEventArgs e)
+        {
+            tbPass.Password = passTxtBox.Text;
+            passTxtBox.Visibility = Visibility.Collapsed;
+            tbPass.Visibility = Visibility.Visible;
+        }
     }
 }

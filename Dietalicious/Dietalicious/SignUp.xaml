@@ -98,6 +98,26 @@
                 <DropShadowEffect/>
             </PasswordBox.Effect>
         </PasswordBox>
+        <CheckBox Name="show_Password" Unchecked="ShowPassword_Unchecked" Checked="ShowPassword_Checked" Foreground="White" Content="Show Password" HorizontalAlignment="Left" Height="17" Margin="578,226,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold">
+            <CheckBox.Effect>
+                <DropShadowEffect/>
+            </CheckBox.Effect>
+        </CheckBox>
+        <CheckBox Name="show_ConfirmPassword" Unchecked="ShowConfirmPassword_Unchecked" Checked="ShowConfirmPassword_Checked" Foreground="White" Content="Show Password" HorizontalAlignment="Left" Height="18" Margin="578,278,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold">
+            <CheckBox.Effect>
+                <DropShadowEffect/>
+            </CheckBox.Effect>
+        </CheckBox>
+        <TextBox Name="pass_TxtBox" Visibility="Collapsed" Background="#E4DEAE" FontSize="16" HorizontalAlignment="Left" Height="30" Margin="242,220,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="316" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox Name="confirmpass_TxtBox" Visibility="Collapsed" Background="#E4DEAE" FontSize="16" HorizontalAlignment="Left" Height="30" Margin="242,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="316" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
 
 
     </Grid>
