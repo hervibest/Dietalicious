@@ -33,7 +33,7 @@
         <Label Foreground="White" Content="Hasil Pencarian&#xA;" Margin="353,123,0,0" HorizontalAlignment="Left" Width="136" Height="29" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="Search Recipe:" Margin="201,73,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
         <TextBox HorizontalAlignment="Left" Height="26" Margin="353,31,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Grid.Column="1"/>
-        <Button Content="Search" Grid.Column="2" Margin="85,31,37,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="39" FontSize="15" BorderThickness="2,2,2,2">
+        <Button Content="Search" Grid.Column="2" Margin="71,70,51,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="35" FontSize="15" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>

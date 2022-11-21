@@ -6,23 +6,99 @@
         xmlns:local="clr-namespace:Dietalicious"
         mc:Ignorable="d"
         Title="SignUp" Height="450" Width="800">
-    <Grid Background="#FF133A1B">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/ori.jpg" Stretch="UniformToFill" Opacity="0.7"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
-
             <ColumnDefinition Width="692*"/>
             <ColumnDefinition Width="109*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Create your account" HorizontalAlignment="Left" Height="66" Margin="227,20,0,0" VerticalAlignment="Top" Width="360" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
-        <TextBox x:Name="tbEmail" Background="#E4DEAE" HorizontalAlignment="Left" Height="33" Margin="242,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316" />
-        <TextBox x:Name="tbUsername" Background="#E4DEAE" HorizontalAlignment="Left" Height="33" Margin="242,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316"/>
-        <Button Background="#E4DEAE" Content="Create account" HorizontalAlignment="Left" Height="30" Margin="333,325,0,0" VerticalAlignment="Top" Width="138" Click="Create" FontSize="14" FontWeight="Bold"/>
-        <Label Content="Confirm Password" HorizontalAlignment="Left" Height="32" Margin="96,271,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
-        <Label Content="Password" HorizontalAlignment="Left" Height="32" Margin="96,218,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
-        <Label Content="Username" HorizontalAlignment="Left" Height="32" Margin="96,170,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
-        <Label Content="Email" HorizontalAlignment="Left" Height="32" Margin="96,118,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE"/>
-        <Button Background="#B7BF96" Content="Already a member? Sign in" HorizontalAlignment="Left" Height="30" Margin="290,376,0,0" VerticalAlignment="Top" Width="220" Click="Login" FontSize="14" FontWeight="Bold" Foreground="#FFE40A0A"/>
-        <PasswordBox x:Name="tbPassword" Background="#E4DEAE" HorizontalAlignment="Left" Height="34" Margin="242,218,0,0"  VerticalAlignment="Top" Width="316"/>
-        <PasswordBox x:Name="tbConfirmPassword" Background="#E4DEAE" HorizontalAlignment="Left" Height="34" Margin="242,270,0,0"  VerticalAlignment="Top" Width="316"/>
+        <Label Content="Create your account" HorizontalAlignment="Left" Height="66" Margin="227,20,0,0" VerticalAlignment="Top" Width="360" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="tbEmail" Background="#E4DEAE" Height="33" Margin="242,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316" HorizontalAlignment="Left" FontSize="16" Foreground="#FF133A1B" VerticalContentAlignment="Center" >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="tbUsername" Background="#E4DEAE" HorizontalAlignment="Left" Height="33" Margin="242,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Button Background="#E4DEAE" Content="Create account" HorizontalAlignment="Left" Height="30" Margin="333,325,0,0" VerticalAlignment="Top" Width="138" Click="Create" FontSize="14" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Confirm Password" HorizontalAlignment="Left" Height="32" Margin="96,271,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Password" HorizontalAlignment="Left" Height="32" Margin="96,218,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Username" HorizontalAlignment="Left" Height="32" Margin="96,170,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Email" HorizontalAlignment="Left" Height="32" Margin="96,118,0,0" VerticalAlignment="Top" Width="128" FontSize="14" Foreground="#FFE4DEAE" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button Background="#B7BF96" Content="Already a member? Sign in" HorizontalAlignment="Left" Height="30" Margin="290,376,0,0" VerticalAlignment="Top" Width="220" Click="Login" FontSize="14" FontWeight="Bold" Foreground="#FFE40A0A">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <PasswordBox x:Name="tbPassword" Background="#E4DEAE" PasswordChar="*" MaxLength="15" HorizontalAlignment="Left" Height="33" Margin="242,218,0,0"  VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+            <PasswordBox.Effect>
+                <DropShadowEffect/>
+            </PasswordBox.Effect>
+        </PasswordBox>
+        <PasswordBox x:Name="tbConfirmPassword" Background="#E4DEAE" PasswordChar="*" MaxLength="15" HorizontalAlignment="Left" Height="33" Margin="242,270,0,0"  VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+            <PasswordBox.Effect>
+                <DropShadowEffect/>
+            </PasswordBox.Effect>
+        </PasswordBox>
+
 
     </Grid>
 </Window>

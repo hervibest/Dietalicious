@@ -78,5 +78,19 @@ namespace Dietalicious
             SignUp signUp = new SignUp();
             signUp.Show();
         }
+
+        private void ShowPassword_Checked(object sender, RoutedEventArgs e)
+        {
+            passwordTxtBox.Text = tbPassword.Password;
+            tbPassword.Visibility = Visibility.Collapsed;
+            passwordTxtBox.Visibility = Visibility.Visible;
+        }
+
+        private void ShowPassword_Unchecked(object sender, RoutedEventArgs e)
+        {
+            tbPassword.Password = passwordTxtBox.Text;
+            passwordTxtBox.Visibility = Visibility.Collapsed;
+            tbPassword.Visibility = Visibility.Visible;
+        }
     }
 }

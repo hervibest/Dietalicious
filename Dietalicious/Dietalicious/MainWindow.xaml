@@ -6,14 +6,25 @@
         xmlns:local="clr-namespace:Dietalicious"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF133A1B">
-        <Label Content="Login" HorizontalAlignment="Center" Height="66" Margin="0,59,0,0" VerticalAlignment="Top" Width="102" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
-        <TextBox x:Name="tbUsername" Background="#E4DEAE" HorizontalAlignment="Center" Height="33" Margin="0,153,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Opacity="0.7" ImageSource="/Resources/ori.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label Content="Login" HorizontalAlignment="Center" Height="66" Margin="0,44,0,0" VerticalAlignment="Top" Width="110" FontSize="36" Foreground="#E4DEAE" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="tbUsername" Background="#E4DEAE" HorizontalAlignment="Center" Height="34
+                 " Margin="0,140,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" VerticalContentAlignment="Center">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </TextBox.Resources>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
             <TextBox.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </TextBox.BorderBrush>
@@ -21,9 +32,12 @@
         <Button Background="#E4DEAE" Content="Log in" HorizontalAlignment="Center" Height="32" Margin="0,300,0,0" VerticalAlignment="Top" Width="129" Click="Login" FontSize="14" FontWeight="Bold" Foreground="#FF011B10" BorderThickness="2,2,2,2" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
+                    <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
@@ -31,22 +45,26 @@
         <Button Background="#B7BF96" Content="Create a new account?" HorizontalAlignment="Center" Height="35" Margin="0,344,0,0" VerticalAlignment="Top" Width="220" Click="Register" FontSize="14" FontWeight="Bold" Foreground="#FFE40A0A" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
+                    <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <PasswordBox x:Name="tbPassword" Background="#E4DEAE" HorizontalAlignment="Center" Height="33" Margin="0,217,0,0" Password="Password" VerticalAlignment="Top" Width="316" FontSize="16" Foreground="#FF133A1B" BorderThickness="1,1,0,1" VerticalContentAlignment="Center">
-            <PasswordBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </PasswordBox.Resources>
-            <PasswordBox.BorderBrush>
-                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
-            </PasswordBox.BorderBrush>
+        <PasswordBox x:Name="tbPassword" PasswordChar="*" MaxLength="15" Background="#E4DEAE" HorizontalAlignment="Center" Height="35" Password="Password" VerticalAlignment="Center" Width="316" FontSize="16" Foreground="#FF133A1B" BorderThickness="1,1,0,1" VerticalContentAlignment="Center">
+            <PasswordBox.Effect>
+                <DropShadowEffect/>
+            </PasswordBox.Effect>
         </PasswordBox>
+        <TextBox Name="passwordTxtBox" Visibility="Collapsed" Background="#E4DEAE" FontSize="16" HorizontalAlignment="Center" Height="35" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="316" Foreground="#FF133A1B" VerticalContentAlignment="Center" >
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <CheckBox Name="showPassword" Unchecked="ShowPassword_Unchecked" Checked="ShowPassword_Checked" Content="Show Password" Foreground="White" HorizontalAlignment="Left" Height="17" Margin="242,251,0,0" VerticalAlignment="Top" Width="109"/>
     </Grid>
 </Window>
