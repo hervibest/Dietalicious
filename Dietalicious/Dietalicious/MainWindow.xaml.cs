@@ -26,7 +26,7 @@ namespace Dietalicious
         private NpgsqlConnection conn;
         string connstring = "Host=mydatabase-instance.csbnsdtoskt5.ap-northeast-1.rds.amazonaws.com;Username=postgres;Password=informatika;Database=Dietalicious_database";
         public static NpgsqlCommand cmd;
-        private string sql = null; 
+        private string sql = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -44,14 +44,14 @@ namespace Dietalicious
                 conn.Open();
                 sql = @"select * from st_logins(:_user_name  ,:_password)";
                 cmd = new NpgsqlCommand(sql, conn);
-                
+
                 cmd.Parameters.AddWithValue("_user_name", tbUsername.Text);
                 cmd.Parameters.AddWithValue("_password", tbPassword.Password);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     MessageBox.Show("Data user berhasil ditemukan", "Login successful");
                     Global.UserName = new User(tbUsername.Text, tbPassword.Password);
-                    MessageBox.Show($"Selamat datang {tbUsername.Text}!", "Welcome" );
+                    MessageBox.Show($"Selamat datang {tbUsername.Text}!", "Welcome");
                     conn.Close();
 
                     Hide();
@@ -62,15 +62,15 @@ namespace Dietalicious
                 {
                     MessageBox.Show("User belum dibuat atau password salah", "Login failed");
                 }
-                    conn.Close();
-                
+                conn.Close();
+
             }
 
             catch (Exception ex)
             {
                 MessageBox.Show("Error:" + ex.Message, "Kesalahan saat login");
             }
-            
+
         }
         private void Register(object sender, RoutedEventArgs e)
         {

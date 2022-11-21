@@ -77,7 +77,7 @@ namespace Dietalicious
 
                 IList<ThirdPartySuggester> person = a.ToObject<IList<ThirdPartySuggester>>();
 
-                lbl.Content = body;
+                
                 dtGrid2.ItemsSource  = person;
 
                 //RootObject obj = JsonConvert.DeserializeObject<RootObject>(body);
@@ -115,9 +115,9 @@ namespace Dietalicious
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(body);
-                lbl.Content = body;
+               
                 var result = JsonConvert.DeserializeObject<List<ThirdPartySuggester>>(body);
-                lbl.Content = result;
+                
                 dtGrid2.ItemsSource = result;
 
 

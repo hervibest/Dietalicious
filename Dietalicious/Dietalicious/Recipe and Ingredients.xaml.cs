@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Net.Http;
 using System.Data;
-
+using Npgsql;
 using Newtonsoft.Json.Linq;
 using System.Text.Json;
 namespace Dietalicious
@@ -21,18 +21,26 @@ namespace Dietalicious
     /// </summary>
     public partial class Recipe_and_Ingredients : Window
     {
+        private NpgsqlConnection conn;
+        string connstring = "Host=mydatabase-instance.csbnsdtoskt5.ap-northeast-1.rds.amazonaws.com;Username=postgres;Password=informatika;Database=Dietalicious_database";
+        public static NpgsqlCommand cmd;
+        private string sql = null;
+        public string Recipe_Name;
+        public int Recipe_ID;
+
         public class Ingredients
         {
-           
+
             public string aisle { get; set; }
             public string name { get; set; }
             public int amount { get; set; }
             public string unit { get; set; }
-            
+
 
         }
         public class RecipeID
         {
+            public int ID { get; set; }
             public string instructions { get; set; }
             public string title { get; set; }
             public string image { get; set; }
@@ -43,11 +51,12 @@ namespace Dietalicious
             public string protein { get; set; }
             public string fat { get; set; }
             public string carbs { get; set; }
-            
+
         }
         public Recipe_and_Ingredients(string ID)
         {
             InitializeComponent();
+
             GetAPI(ID);
         }
 
@@ -75,10 +84,10 @@ namespace Dietalicious
             };
             using (var response = await client.SendAsync(request))
             {
-         
-            
 
-               
+
+
+
 
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
@@ -87,7 +96,10 @@ namespace Dietalicious
                 //lblResep.Content = recipe.title;
                 TxtBoxResep.Text = recipe.title;
                 TxtBoxData.Text = recipe.instructions;
-                TxtBoxWaktu.Text = " Time: " + recipe.readyInMinutes.ToString() + " Minutes";
+                TxtBoxWaktu.Text = " Time : " + recipe.readyInMinutes.ToString() + " Minutes";
+                Recipe_ID = recipe.ID;
+                Recipe_Name = recipe.title;
+
                 myImage.Source = new BitmapImage(new Uri($@"{recipe.image}", UriKind.RelativeOrAbsolute));
 
                 dynamic ingredients = await response.Content.ReadAsStringAsync();
@@ -98,14 +110,38 @@ namespace Dietalicious
                 JArray a = (JArray)o["extendedIngredients"];
 
                 IList<Ingredients> person = a.ToObject<IList<Ingredients>>();
-                MessageBox.Show(body);
-                
+                MessageBox.Show(recipe.title);
+                Recipe_ID = Int32.Parse(ID);
                 dtGrid2.ItemsSource = person;
 
+                MessageBox.Show(Recipe_ID.ToString(), Recipe_Name);
 
 
 
             }
+
+        }
+
+        private void btnFavorites_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(Recipe_ID.ToString(), Recipe_Name);
+
+            conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            sql = @"select * from st_insert_fav(:_recipe_id ,:_name,:_username)";
+            cmd = new NpgsqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("_recipe_id", Recipe_ID);
+            cmd.Parameters.AddWithValue("_name", Recipe_Name);
+            cmd.Parameters.AddWithValue("_username", Global.UserName.getUserName());
+
+
+            if ((int)cmd.ExecuteScalar() == 1)
+            {
+                MessageBox.Show("Resep berhasil ditambahkan ke Favorite", "Success");
+                conn.Close();
+
+            }
+            conn.Close();
 
         }
     }

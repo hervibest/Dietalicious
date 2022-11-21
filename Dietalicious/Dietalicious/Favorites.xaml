@@ -14,6 +14,7 @@
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </ListBox.Resources>
+            <DataGrid/>
         </ListBox>
         <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="26,30,0,0" VerticalAlignment="Top" Click="Home_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
             <Button.Resources>
@@ -25,6 +26,7 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
+        <DataGrid x:Name="dgvData" HorizontalAlignment="Left" Height="301" Margin="157,104,0,0" VerticalAlignment="Top" Width="230"/>
 
     </Grid>
 </Window>
