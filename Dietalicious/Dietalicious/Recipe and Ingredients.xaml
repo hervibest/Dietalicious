@@ -24,12 +24,11 @@
             </Button>
             <Image x:Name="myImage"  HorizontalAlignment="Left" Height="117" Margin="34,17,0,0" VerticalAlignment="Top" Width="196"/>
             <TextBlock x:Name="TxtBoxData" HorizontalAlignment="Left" Height="153" Margin="282,72,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="397" ScrollViewer.HorizontalScrollBarVisibility="Visible" Foreground="#E4DEAE"/>
-            <TextBlock x:Name="TxtBoxResep" Foreground="#E4DEAE" Text="" Margin="0,0,182,328" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right" Width="260" TextWrapping="Wrap" Height="53" VerticalAlignment="Bottom"/>
-            <TextBlock x:Name="TxtBoxWaktu" Background="#E4DEAE" Foreground="DarkRed" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Height="19" Margin="34,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196"/>
+            <TextBlock x:Name="TxtBoxResep" Foreground="#E4DEAE" Text="" Margin="0,0,182,328" FontSize="17" FontWeight="Bold" HorizontalAlignment="Right" Width="260" TextWrapping="Wrap" Height="53" VerticalAlignment="Bottom"/>
+            <TextBlock x:Name="TxtBoxWaktu" Background="#E4DEAE" Foreground="DarkRed" FontSize="17" FontWeight="Bold" HorizontalAlignment="Left" Height="24" Margin="53,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+            <Button Content="Add to favorites" Background="#FFB7BF96" Foreground="#FF011B10" HorizontalAlignment="Left" Height="24" Margin="76,194,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold"/>
         </Grid>
-        <Grid Background="#B7BF96" HorizontalAlignment="Left" Height="22" Margin="88,217,0,0" VerticalAlignment="Top" Width="162"/>
-        <DataGrid x:Name="dtGrid2" Grid.ColumnSpan="2" Margin="70,262,0,0" Height="136" VerticalAlignment="Top" HorizontalAlignment="Left" Width="660"/>
-        <Label Foreground="DarkGreen" Content="Add to Favorites" Margin="118,214,259,195"/>
+        <DataGrid x:Name="dtGrid2" Background="#FFB7BF96" Foreground="#FF011B10" Grid.ColumnSpan="2" Margin="70,262,0,0" Height="136" VerticalAlignment="Top" HorizontalAlignment="Left" Width="660"/>
 
     </Grid>
 </Window>

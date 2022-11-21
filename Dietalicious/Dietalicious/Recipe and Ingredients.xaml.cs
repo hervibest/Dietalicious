@@ -36,7 +36,7 @@ namespace Dietalicious
             public string instructions { get; set; }
             public string title { get; set; }
             public string image { get; set; }
-            public string readyInMinutes {  get; set; }
+            public int readyInMinutes {  get; set; }
             public string type { get; set; }
             public string sourceUrl { get; set; }
             public int calories { get; set; }
@@ -87,7 +87,7 @@ namespace Dietalicious
                 //lblResep.Content = recipe.title;
                 TxtBoxResep.Text = recipe.title;
                 TxtBoxData.Text = recipe.instructions;
-                TxtBoxWaktu.Text = recipe.readyInMinutes.ToString();
+                TxtBoxWaktu.Text = " Time : " + recipe.readyInMinutes.ToString() + " Minutes";
                 myImage.Source = new BitmapImage(new Uri($@"{recipe.image}", UriKind.RelativeOrAbsolute));
 
                 dynamic ingredients = await response.Content.ReadAsStringAsync();
@@ -107,11 +107,6 @@ namespace Dietalicious
 
             }
 
-
-
         }
-
-
-
     }
 }
