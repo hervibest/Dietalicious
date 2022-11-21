@@ -46,7 +46,7 @@ namespace Dietalicious
                 cmd.Parameters.AddWithValue("_bmi", tbBMI.Text);
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
-                    MessageBox.Show("Data Users berhasil diupdate");
+                    MessageBox.Show("Data user berhasil diperbarui", "Success");
                     conn.Close();
                     Hide();
                     Home home = new Home();
@@ -54,7 +54,7 @@ namespace Dietalicious
                 }
                 else
                 {
-                    MessageBox.Show("Data tidak bisa disimpan, username tidak tersedia");
+                    MessageBox.Show("Data tidak bisa disimpan, username tidak tersedia", "Saving error");
                     conn.Close();
                 }
 
@@ -63,7 +63,7 @@ namespace Dietalicious
 
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "Save data FAIL!!");
+                MessageBox.Show("Error:" + ex.Message, "Kesalahan saat menyimpan data");
             }
         }
         private void Cancel_Click(object sender, RoutedEventArgs e)
