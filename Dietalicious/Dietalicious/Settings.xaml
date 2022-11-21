@@ -19,7 +19,7 @@
                 <DropShadowEffect/>
             </Rectangle.Effect>
         </Rectangle>
-        <Label x:Name="lblSettingsTitle" Content="Settings" HorizontalAlignment="Left" Margin="35,19,0,0" VerticalAlignment="Top" Foreground="#FF1E1E1E" FontFamily="Inter Extrabold" FontSize="32" Grid.RowSpan="2" Padding="5,5,5,5">
+        <Label x:Name="lblSettingsTitle" Content="Settings" HorizontalAlignment="Left" Margin="35,19,0,0" VerticalAlignment="Top" Foreground="#FF011B10" FontFamily="Inter Bold" FontSize="32" Grid.RowSpan="2" Padding="5,5,5,5">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>

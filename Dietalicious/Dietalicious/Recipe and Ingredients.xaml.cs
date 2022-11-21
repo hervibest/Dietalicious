@@ -87,7 +87,7 @@ namespace Dietalicious
                 //lblResep.Content = recipe.title;
                 TxtBoxResep.Text = recipe.title;
                 TxtBoxData.Text = recipe.instructions;
-                TxtBoxWaktu.Text = " Time : " + recipe.readyInMinutes.ToString() + " Minutes";
+                TxtBoxWaktu.Text = " Time: " + recipe.readyInMinutes.ToString() + " Minutes";
                 myImage.Source = new BitmapImage(new Uri($@"{recipe.image}", UriKind.RelativeOrAbsolute));
 
                 dynamic ingredients = await response.Content.ReadAsStringAsync();
