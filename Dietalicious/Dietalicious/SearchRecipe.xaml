@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Dietalicious"
         mc:Ignorable="d"
         Title="SearchRecipe" Height="450" Width="800">
-    <Grid Background="#E4DEAE" Margin="-1,0,0,0" Height="434" VerticalAlignment="Center" HorizontalAlignment="Left" Width="800">
+    <Grid Background="#E4DEAE" Height="434" VerticalAlignment="Center" HorizontalAlignment="Left" Width="800" Margin="2,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="0*"/>
@@ -16,30 +16,65 @@
             <ColumnDefinition Width="591*"/>
             <ColumnDefinition Width="207*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="lbl" Margin="10,20,459,364" Grid.Column="1"/>
-        <TextBox x:Name="TbCalories" HorizontalAlignment="Left" Height="21" Margin="447,75,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Grid Background="#133A1B" HorizontalAlignment="Left" Margin="27,108,0,0" Width="735" Grid.ColumnSpan="2" Grid.Column="1" Height="291" VerticalAlignment="Top"/>
-        <Label Foreground="White" Content="Hasil Pencarian&#xA;" Margin="353,112,0,0" HorizontalAlignment="Left" Width="136" Height="29" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Kalori Maksimal" Margin="338,71,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
-        <Button Content="Search" Grid.Column="2" Margin="80,63,0,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="35" FontSize="15" BorderThickness="2,2,2,2" HorizontalAlignment="Left" Width="85">
+        <TextBox x:Name="TbCalories" Background="#FFB7BF96" HorizontalAlignment="Left" Height="21" Margin="262,68,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Grid Background="#133A1B" HorizontalAlignment="Left" Margin="27,108,0,0" Width="735" Grid.ColumnSpan="2" Grid.Column="1" Height="291" VerticalAlignment="Top">
+            <Grid.Effect>
+                <DropShadowEffect/>
+            </Grid.Effect>
+        </Grid>
+        <Label Foreground="White" Content="HASIL PENCARIAN" Margin="346,112,0,0" HorizontalAlignment="Left" Width="120" Height="29" VerticalAlignment="Top" Grid.Column="1" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Kalori Maksimal :" Margin="262,38,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
+        <Button Content="Search" Grid.Column="1" Margin="492,61,14,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="34" FontSize="15" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
+                    <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <DataGrid x:Name="dtGrid2" Margin="59,141,0,0" SelectionChanged="dtGrid2_SelectionChanged" Grid.ColumnSpan="2" Height="233" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Left" Width="667"/>
-        <Label Content="Kalori Minimal" Margin="29,72,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
-        <TextBox x:Name="TbCaloriesMin" HorizontalAlignment="Left" Height="21" Margin="126,75,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1"/>
-        <Button x:Name="btnHome" Margin="28,26,0,0" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Home_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="38" Width="86" FontSize="15" BorderThickness="2,2,2,2" Grid.Column="1">
+        <DataGrid x:Name="dtGrid2" Background="#FFB7BF96" Margin="59,141,0,0" SelectionChanged="dtGrid2_SelectionChanged" Grid.ColumnSpan="2" Height="233" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Left" Width="667">
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <Label Content="Kalori Minimal :" Margin="27,39,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
+        <TextBox x:Name="TbCaloriesMin" Background="#FFB7BF96" HorizontalAlignment="Left" Height="21" Margin="27,68,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Button x:Name="btnHome" Margin="85,22,0,0" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Home_Click" Background="#FFB7BF96" Foreground="#133A1B" FontFamily="Inter Bold" Height="38" Width="86" FontSize="15" BorderThickness="2,2,2,2" Grid.Column="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>

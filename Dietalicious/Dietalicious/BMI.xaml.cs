@@ -73,7 +73,7 @@ namespace Dietalicious
                 conn.Open();
                
 
-                sql = @"select * from st_calcbmi(:_height  ,:_weight,:_sex)";
+                sql = @"select * from st_calcbmi(:_height,:_weight,:_sex)";
                 cmd2 = new NpgsqlCommand(sql, conn);
                 cmd2.Parameters.AddWithValue("_height", height);
                 cmd2.Parameters.AddWithValue("_weight", weight);

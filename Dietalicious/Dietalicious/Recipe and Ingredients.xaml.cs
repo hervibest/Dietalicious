@@ -36,7 +36,7 @@ namespace Dietalicious
             public string instructions { get; set; }
             public string title { get; set; }
             public string image { get; set; }
-            public int readyInMinutes {  get; set; }
+            public int readyInMinutes { get; set; }
             public string type { get; set; }
             public string sourceUrl { get; set; }
             public int calories { get; set; }

@@ -132,7 +132,7 @@
                 <DropShadowEffect/>
             </CheckBox.Effect>
         </CheckBox>
-        <TextBox  Name="passTxtBox" Visibility="Collapsed" Background="#E4DEAE" Foreground="#FF133A1B" FontSize="16" HorizontalAlignment="Left" Height="29" Margin="347,172,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="355" VerticalContentAlignment="Center">
+        <TextBox  Name="passTxtBox" Visibility="Collapsed" Background="#E4DEAE" Foreground="#FF133A1B" FontSize="16" HorizontalAlignment="Left" Height="30" Margin="347,172,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="355" VerticalContentAlignment="Center">
         <TextBox.Effect>
             <DropShadowEffect/>
         </TextBox.Effect>

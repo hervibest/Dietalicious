@@ -108,12 +108,12 @@
                 <DropShadowEffect/>
             </CheckBox.Effect>
         </CheckBox>
-        <TextBox Name="pass_TxtBox" Visibility="Collapsed" Background="#E4DEAE" FontSize="16" HorizontalAlignment="Left" Height="30" Margin="242,220,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="316" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+        <TextBox Name="pass_TxtBox" Visibility="Collapsed" Background="#E4DEAE" FontSize="16" HorizontalAlignment="Left" Height="33" Margin="242,220,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="316" Foreground="#FF133A1B" VerticalContentAlignment="Center">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox Name="confirmpass_TxtBox" Visibility="Collapsed" Background="#E4DEAE" FontSize="16" HorizontalAlignment="Left" Height="30" Margin="242,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="316" Foreground="#FF133A1B" VerticalContentAlignment="Center">
+        <TextBox Name="confirmpass_TxtBox" Visibility="Collapsed" Background="#E4DEAE" FontSize="16" HorizontalAlignment="Left" Height="33" Margin="242,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="316" Foreground="#FF133A1B" VerticalContentAlignment="Center">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>

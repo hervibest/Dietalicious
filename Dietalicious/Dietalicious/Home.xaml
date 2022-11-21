@@ -8,54 +8,73 @@
         Title="Home" Height="450" Width="800">
     <Grid Background="#FFE4DEAE">
         <Rectangle HorizontalAlignment="Left" Height="88" VerticalAlignment="Top" Width="912" Margin="-8,0,0,0">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FF133A1B" />
             </Rectangle.Fill>
         </Rectangle>
-        <Label Content="Home" HorizontalAlignment="Right" Height="66" Margin="0,11,546,0" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
+        <Label Content="Home" HorizontalAlignment="Right" Height="66" Margin="0,11,546,0" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
         <Image Width="326" HorizontalAlignment="Right" Margin="0,139,448,0" Height="173" VerticalAlignment="Top" >
             <Image.Source>
                 <BitmapImage DecodePixelWidth="326" UriSource="/Resources/logo.png" />
             </Image.Source>
         </Image>
         <Label Content="Welcome, _______________!" HorizontalAlignment="Right" Margin="0,139,68,0" Width="362" FontSize="36" Foreground="#FF133A1B" FontWeight="Bold" Height="55" VerticalAlignment="Top"/>
-        <Label Content="Dietalicious merupakan aplikasi meal planner&#xD;&#xA;yang membantu dalam perencanaan makanan&#xD;&#xA;Anda. Aplikasi ini dilengkapi dengan&#xD;&#xA;fitur perhitungan BMI, pencarian resep &#xD;&#xA;berdasarkan kalori dan list favorit resep Anda." HorizontalAlignment="Right" Margin="0,199,53,0" Width="377" FontSize="18" Foreground="#FF133A1B" Height="166" VerticalAlignment="Top"/>
-        <Button Content="Recipe" HorizontalAlignment="Left" Margin="446,30,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="Recipe_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
+        <Label Content="Dietalicious merupakan aplikasi meal planner&#xA;yang membantu dalam perencanaan makanan&#xA;Anda. Aplikasi ini dilengkapi dengan&#xA;fitur perhitungan BMI, pencarian resep &#xA;berdasarkan kalori dan list favorit resep Anda.&#xD;&#xA;&#xD;&#xA;Temukan pengalaman menarik dalam&#xA;menggunakan aplikasi ini!!" HorizontalAlignment="Right" Margin="0,199,53,0" Width="377" FontSize="18" Foreground="#FF133A1B" Height="205" VerticalAlignment="Top"/>
+        <Button Content="Recipe" HorizontalAlignment="Left" Margin="446,30,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Click="Recipe_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="Account" HorizontalAlignment="Left" Margin="566,30,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="Account_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
+        <Button Content="Account" HorizontalAlignment="Left" Margin="566,30,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Click="Account_Click" Width="94" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="BMI" HorizontalAlignment="Left" Margin="337,30,0,0"  FontSize="16" FontWeight="Bold"  Click="BMI_Click" VerticalAlignment="Top" Width="85" Height="28" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
+        <Button Content="BMI" HorizontalAlignment="Left" Margin="337,30,0,0"  FontSize="14" FontWeight="Bold"  Click="BMI_Click" VerticalAlignment="Top" Width="85" Height="28" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="Sign out" HorizontalAlignment="Left" Margin="686,30,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Click="SignOut_Click" Width="95" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
+        <Button Content="Sign out" HorizontalAlignment="Left" Margin="686,30,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Click="SignOut_Click" Width="95" Height="29" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
                 </Style>
             </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
