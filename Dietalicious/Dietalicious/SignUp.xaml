@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Dietalicious"
         mc:Ignorable="d"
         Title="SignUp" Height="450" Width="800">
-    <Grid>
+    <Grid HorizontalAlignment="Center" Width="800" Height="434" VerticalAlignment="Top">
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/ori.jpg" Stretch="UniformToFill" Opacity="0.7"/>
         </Grid.Background>

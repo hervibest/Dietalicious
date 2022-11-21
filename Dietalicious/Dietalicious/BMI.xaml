@@ -59,7 +59,7 @@
             </Button.Resources>
         </Button>
         <Label x:Name="lblBMI" Content="BMI: _______________" HorizontalAlignment="Left" Margin="433,124,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontFamily="Inter Semibold" FontSize="22.5" Width="165"/>
-        <Label x:Name="lblBMI_Copy" Content="Daily calories intake: __________________" HorizontalAlignment="Left" Margin="433,178,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontFamily="Inter Semibold" FontSize="22.5" Width="345"/>
+        <Label x:Name="lblBMI_Copy" Content="Calories per meal: __________________" HorizontalAlignment="Left" Margin="433,178,0,0" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontFamily="Inter Semibold" FontSize="22.5" Width="345"/>
         <TextBlock x:Name="tblCategory" HorizontalAlignment="Left" Margin="438,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFB7BF96" Height="96" Width="223" Padding="9,9,0,0" Foreground="#FF3E3B3B" FontFamily="Inter Regular" FontSize="13" Grid.RowSpan="2"><Run/><LineBreak/><Run Text="Underweight = &lt;18.5"/><LineBreak/><Run Text="Normal weight = 18.5–24.9"/><LineBreak/><Run Text="Overweight = 25–29.9"/><LineBreak/><Run Text="Obesity = BMI of 30 or greater"/></TextBlock>
         <Button x:Name="btnRecipeRecc" Content="Recipe recommendation" HorizontalAlignment="Left" Margin="408,61,0,0" VerticalAlignment="Top" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Semibold" Width="327" Height="44" FontSize="20" BorderThickness="2,2,2,2" Click="Recipe_Click" Grid.Row="1">
             <Button.Resources>

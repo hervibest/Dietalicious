@@ -79,7 +79,7 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <TextBlock x:Name="tbUsn" HorizontalAlignment="Right" Margin="0,146,146,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" Height="41" FontFamily="Inter Semibold" FontSize="32" Background="{x:Null}" Foreground="#FF133A1B" TextAlignment="Center"/>
+        <TextBlock x:Name="tbUsn" HorizontalAlignment="Right" Margin="0,146,150,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" Height="41" FontFamily="Inter Semibold" FontSize="32" Background="{x:Null}" Foreground="#FF133A1B" TextAlignment="Center"/>
 
     </Grid>
 </Window>

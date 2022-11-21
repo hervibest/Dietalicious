@@ -8,14 +8,6 @@
         Title="Favorites" Height="450" Width="800">
     <Grid Background="#FF011B10">
         <Label x:Name="lblFavTitle" Content="Favorite Recipes" HorizontalAlignment="Center" Margin="0,33,0,0" FontFamily="Inter Extrabold" VerticalAlignment="Top" Foreground="#FFE4DEAE" FontSize="32"/>
-        <ListBox x:Name="lsFav" d:ItemsSource="{d:SampleData ItemCount=25}" Margin="162,104,162,29" BorderThickness="2,2,2,2" Background="#FFB7BF96" SelectionChanged="lsFav_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Padding="7,10,0,10" VerticalContentAlignment="Center" FontFamily="Inter Reguler" FontSize="15">
-            <ListBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
-                </Style>
-            </ListBox.Resources>
-            <DataGrid/>
-        </ListBox>
         <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="26,30,0,0" VerticalAlignment="Top" Click="Home_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -26,7 +18,7 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <DataGrid x:Name="dgvData" HorizontalAlignment="Left" Height="301" Margin="157,104,0,0" VerticalAlignment="Top" Width="230"/>
+        <DataGrid x:Name="dgvData" HorizontalAlignment="Left" Height="265" Margin="157,104,0,0" VerticalAlignment="Top" Width="460" Background="#FFB7BF96" BorderBrush="#FFB7BF96"/>
 
     </Grid>
 </Window>
