@@ -8,11 +8,13 @@
 
   <ItemGroup>
     <None Remove="background.png" />
+    <None Remove="ori.jpg" />
     <None Remove="Resources\logo.png" />
     <None Remove="Resources\ori.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="ori.jpg" />
     <Resource Include="Resources\logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
