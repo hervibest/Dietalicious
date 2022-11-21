@@ -84,7 +84,8 @@ namespace Dietalicious
                 var body = await response.Content.ReadAsStringAsync();
                 RecipeID recipe = JsonSerializer.Deserialize<RecipeID>(body);
                 Console.WriteLine(body);
-                lblResep.Content = recipe.title;
+                //lblResep.Content = recipe.title;
+                TxtBoxResep.Text = recipe.title;
                 TxtBoxData.Text = recipe.instructions;
                 myImage.Source = new BitmapImage(new Uri($@"{recipe.image}", UriKind.RelativeOrAbsolute));
 

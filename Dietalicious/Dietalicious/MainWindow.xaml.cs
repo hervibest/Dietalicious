@@ -68,7 +68,7 @@ namespace Dietalicious
 
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "Login error");
+                MessageBox.Show("Error:" + ex.Message, "Kesalahan saat login");
             }
             
         }

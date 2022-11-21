@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Dietalicious"
         mc:Ignorable="d"
         Title="SearchRecipe" Height="450" Width="800">
-    <Grid Background="#E4DEAE" Margin="-3,0,3,0">
+    <Grid Background="#E4DEAE" Margin="-1,0,0,0" Height="434" VerticalAlignment="Center" HorizontalAlignment="Left" Width="800">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="0*"/>
@@ -16,23 +16,12 @@
             <ColumnDefinition Width="591*"/>
             <ColumnDefinition Width="207*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="lbl" Margin="0,0,471,137" Grid.ColumnSpan="2">
-            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Home_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <Button.BorderBrush>
-                    <SolidColorBrush Color="#FF011B10" Opacity="0"/>
-                </Button.BorderBrush>
-            </Button>
-        </Label>
-        <TextBox x:Name="TbCalories" HorizontalAlignment="Left" Height="21" Margin="425,77,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Grid Background="#133A1B" HorizontalAlignment="Left" Margin="8,119,0,0" Width="780" Grid.ColumnSpan="2" Height="305" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Foreground="White" Content="Hasil Pencarian&#xA;" Margin="353,123,0,0" HorizontalAlignment="Left" Width="136" Height="29" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Kalori Maksimal" Margin="316,73,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
-        <Button Content="Search" Grid.Column="2" Margin="71,70,51,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="35" FontSize="15" BorderThickness="2,2,2,2">
+        <Label x:Name="lbl" Margin="10,20,459,364" Grid.Column="1"/>
+        <TextBox x:Name="TbCalories" HorizontalAlignment="Left" Height="21" Margin="447,75,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Grid Background="#133A1B" HorizontalAlignment="Left" Margin="27,108,0,0" Width="735" Grid.ColumnSpan="2" Grid.Column="1" Height="291" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="Hasil Pencarian&#xA;" Margin="353,112,0,0" HorizontalAlignment="Left" Width="136" Height="29" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Kalori Maksimal" Margin="338,71,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
+        <Button Content="Search" Grid.Column="2" Margin="80,63,0,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="35" FontSize="15" BorderThickness="2,2,2,2" HorizontalAlignment="Left" Width="85">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -42,9 +31,19 @@
                 <SolidColorBrush Color="#FF011B10" Opacity="0"/>
             </Button.BorderBrush>
         </Button>
-        <DataGrid x:Name="dtGrid2" Margin="59,152,0,0" SelectionChanged="dtGrid2_SelectionChanged" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="688" Height="266" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Kalori Minimal" Margin="27,74,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
-        <TextBox x:Name="TbCaloriesMin" HorizontalAlignment="Left" Height="21" Margin="124,77,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1"/>
+        <DataGrid x:Name="dtGrid2" Margin="59,141,0,0" SelectionChanged="dtGrid2_SelectionChanged" Grid.ColumnSpan="2" Height="233" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Left" Width="667"/>
+        <Label Content="Kalori Minimal" Margin="29,72,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1"/>
+        <TextBox x:Name="TbCaloriesMin" HorizontalAlignment="Left" Height="21" Margin="126,75,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1"/>
+        <Button x:Name="btnHome" Margin="28,26,0,0" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Home_Click" Background="#FF011B10" Foreground="#FFE4DEAE" FontFamily="Inter Bold" Height="38" Width="86" FontSize="15" BorderThickness="2,2,2,2" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF011B10" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
 
 
     </Grid>

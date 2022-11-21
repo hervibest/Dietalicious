@@ -44,23 +44,22 @@ namespace Dietalicious
                     cmd.Parameters.AddWithValue("_password", tbPassword.Password);
                     if ((int)cmd.ExecuteScalar() == 1)
                     {
-                        MessageBox.Show("Data Users berhasil diinputkan", "Well Done!");
+                        MessageBox.Show("Data user berhasil diinputkan", "Success");
                         conn.Close();
                
                     }
-                    MessageBox.Show("password sama");
                     conn.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Password tidak sama");
+                    MessageBox.Show("Password tidak sesuai!", "Warning");
 
                 }
             }
             
             catch(Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message, "Insert FAIL!!");
+                MessageBox.Show("Error:" + ex.Message, "Pembuatan akun tidak berhasil!");
             }
             Hide();
             MainWindow signUp = new MainWindow();

@@ -90,7 +90,7 @@ namespace Dietalicious
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Calculation failed!");
+                MessageBox.Show("Error: " + ex.Message, "Gagal pada saat perhitungan!");
             }
         }
         private void Home_Click(object sender, RoutedEventArgs e)

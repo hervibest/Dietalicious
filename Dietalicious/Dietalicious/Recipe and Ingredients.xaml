@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:Dietalicious"
         mc:Ignorable="d"
         Title="Recipe_and_Ingredients" Height="450" Width="800">
-    <Grid Background="#E4DEAE">
+    <Grid Background="#E4DEAE" Height="434" VerticalAlignment="Center" HorizontalAlignment="Left" Width="800">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="479*"/>
             <ColumnDefinition Width="321*"/>
         </Grid.ColumnDefinitions>
-        <Grid HorizontalAlignment="Left" Background="#133A1B" Height="366" VerticalAlignment="Center" Width="724" Grid.ColumnSpan="2" Margin="38,0,0,0">
-            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="609,39,0,0" VerticalAlignment="Top" Click="Home_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
+        <Grid HorizontalAlignment="Left" Background="#133A1B" Height="388" VerticalAlignment="Center" Width="724" Grid.ColumnSpan="2" Margin="38,0,0,0">
+            <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="609,14,0,0" VerticalAlignment="Top" Click="Home_Click" Background="#FFE4DEAE" Foreground="#FF011B10" FontFamily="Inter Bold" Height="39" Width="85" FontSize="15" BorderThickness="2,2,2,2">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -22,18 +22,13 @@
                     <SolidColorBrush Color="#FF011B10" Opacity="0"/>
                 </Button.BorderBrush>
             </Button>
-            <Image x:Name="myImage"  HorizontalAlignment="Left" Height="152" Margin="67,39,0,0" VerticalAlignment="Top" Width="152"/>
-            <TextBlock x:Name="TxtBoxData" HorizontalAlignment="Left" Height="142" Margin="320,97,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="358" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
+            <Image x:Name="myImage"  HorizontalAlignment="Left" Height="156" Margin="34,17,0,0" VerticalAlignment="Top" Width="156"/>
+            <TextBlock x:Name="TxtBoxData" HorizontalAlignment="Left" Height="153" Margin="282,72,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="397" ScrollViewer.HorizontalScrollBarVisibility="Visible" Foreground="White"/>
+            <TextBlock x:Name="TxtBoxResep" Foreground="White" Text="" Margin="0,0,182,328" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right" Width="260" TextWrapping="Wrap" Height="53" VerticalAlignment="Bottom"/>
         </Grid>
-        <Grid Background="#B7BF96" HorizontalAlignment="Left" Height="22" Margin="104,254,0,0" VerticalAlignment="Top" Width="162"/>
-        <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="88" Margin="104,293,0,0" VerticalAlignment="Top" Width="108"/>
-        <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="88" Margin="228,293,0,0" VerticalAlignment="Top" Width="108"/>
-        <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="88" Margin="358,293,0,0" VerticalAlignment="Top" Width="108"/>
-        <Grid Background="#E4DEAE" HorizontalAlignment="Left" Margin="10,293,0,0" Width="108" Grid.Column="1" Height="88" VerticalAlignment="Top"/>
-        <Grid Background="#E4DEAE" HorizontalAlignment="Left" Height="88" Margin="144,293,0,0" VerticalAlignment="Top" Width="108" Grid.Column="1"/>
-        <Label Foreground="DarkGreen" Content="Add to Favorites" Margin="133,251,243,158"/>
-        <Label x:Name="lblResep" Foreground="White" Content="Nama Resep" Margin="0,66,182,0" FontSize="25" FontWeight="Bold" Grid.ColumnSpan="2" Height="45" VerticalAlignment="Top" HorizontalAlignment="Right" Width="260"/>
-        <DataGrid x:Name="dtGrid2" Grid.ColumnSpan="2" Margin="70,276,70,-6"/>
+        <Grid Background="#B7BF96" HorizontalAlignment="Left" Height="22" Margin="70,204,0,0" VerticalAlignment="Top" Width="162"/>
+        <DataGrid x:Name="dtGrid2" Grid.ColumnSpan="2" Margin="70,262,0,0" Height="136" VerticalAlignment="Top" HorizontalAlignment="Left" Width="660"/>
+        <Label Foreground="DarkGreen" Content="Add to Favorites" Margin="100,201,277,208"/>
 
     </Grid>
 </Window>
