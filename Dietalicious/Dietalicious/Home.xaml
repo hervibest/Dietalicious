@@ -12,7 +12,7 @@
                 <SolidColorBrush Color="#FF133A1B" />
             </Rectangle.Fill>
         </Rectangle>
-        <Label Content="Home" HorizontalAlignment="Right" Height="66" Margin="0,11,567,0" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
+        <Label Content="Home" HorizontalAlignment="Right" Height="66" Margin="0,11,546,0" VerticalAlignment="Top" Width="216" FontSize="36" Foreground="#FFE4DEAE" FontWeight="Bold"/>
         <Image Width="326" HorizontalAlignment="Right" Margin="0,139,448,0" Height="173" VerticalAlignment="Top" >
             <Image.Source>
                 <BitmapImage DecodePixelWidth="326" UriSource="/Resources/logo.png" />
