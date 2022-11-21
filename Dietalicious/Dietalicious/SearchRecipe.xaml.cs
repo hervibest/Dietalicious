@@ -96,12 +96,13 @@ namespace Dietalicious
         private async void GetAPI()
         {
             string Input = TbCalories.Text;
+            string InputMin = TbCaloriesMin.Text;
             var client = new HttpClient();
 
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri($"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByNutrients?limitLicense=false&maxCalories={Input}&minCalories=500"),
+                RequestUri = new Uri($"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByNutrients?limitLicense=false&maxCalories={Input}&minCalories={InputMin}"),
                 Headers =
                {
                     { "X-RapidAPI-Key", "f47554ac2fmsh3315b39d04d3f19p1a81eajsnf816b87369c7" },
