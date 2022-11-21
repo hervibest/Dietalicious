@@ -78,7 +78,7 @@ namespace Dietalicious
         private void Recipe_Click(object sender, RoutedEventArgs e)
         {
             Hide();
-            SearchRecipe recipe = new SearchRecipe();
+            SearchRecipe recipe = new SearchRecipe(2);
             recipe.Show();
         }
         private void BMI_Click(object sender, RoutedEventArgs e)

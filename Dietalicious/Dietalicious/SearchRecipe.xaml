@@ -16,7 +16,7 @@
             <ColumnDefinition Width="591*"/>
             <ColumnDefinition Width="207*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="TbCalories" Background="#FFB7BF96" HorizontalAlignment="Left" Height="21" Margin="262,68,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1">
+        <TextBox x:Name="TbCalories" Background="#FFB7BF96" HorizontalAlignment="Left" Height="21" Margin="262,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -31,7 +31,7 @@
                 <DropShadowEffect/>
             </Grid.Effect>
         </Grid>
-        <Label Foreground="White" Content="HASIL PENCARIAN" Margin="346,112,0,0" HorizontalAlignment="Left" Width="120" Height="29" VerticalAlignment="Top" Grid.Column="1" FontWeight="Bold">
+        <Label x:Name="lblPencarian_" Foreground="White" Content="HASIL PENCARIAN" Margin="308,112,0,0" HorizontalAlignment="Left" Width="193" Height="29" VerticalAlignment="Top" Grid.Column="1" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
@@ -56,7 +56,7 @@
             </DataGrid.Effect>
         </DataGrid>
         <Label Content="Kalori Minimal :" Margin="27,39,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Grid.Column="1" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
-        <TextBox x:Name="TbCaloriesMin" Background="#FFB7BF96" HorizontalAlignment="Left" Height="21" Margin="27,68,0,0" Text="Masukkan kalori yang diinginkan" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1">
+        <TextBox x:Name="TbCaloriesMin" Background="#FFB7BF96" HorizontalAlignment="Left" Height="21" Margin="27,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TbCalories_TextChanged" Grid.Column="1">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>

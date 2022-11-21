@@ -110,11 +110,9 @@ namespace Dietalicious
                 JArray a = (JArray)o["extendedIngredients"];
 
                 IList<Ingredients> person = a.ToObject<IList<Ingredients>>();
-                MessageBox.Show(recipe.title);
+                
                 Recipe_ID = Int32.Parse(ID);
                 dtGrid2.ItemsSource = person;
-
-                MessageBox.Show(Recipe_ID.ToString(), Recipe_Name);
 
 
 
@@ -124,7 +122,7 @@ namespace Dietalicious
 
         private void btnFavorites_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Recipe_ID.ToString(), Recipe_Name);
+        
 
             conn = new NpgsqlConnection(connstring);
             conn.Open();

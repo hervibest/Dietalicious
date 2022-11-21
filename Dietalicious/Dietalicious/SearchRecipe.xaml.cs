@@ -43,9 +43,20 @@ namespace Dietalicious
             public string fat { get; set; }
             public string carbs { get; set; }
         }
-        public SearchRecipe()
+        public string Calories;
+        public int Cal;
+        
+        public SearchRecipe(double _Cal)
         {
             InitializeComponent();
+            Calories = "0";
+            if (_Cal != 2) {
+                Cal = (int)_Cal;
+               
+                Calories = Cal.ToString();
+                GetAPI();
+            }
+            
             //GetAPIfromName();
 
         }
@@ -95,38 +106,62 @@ namespace Dietalicious
         }
         private async void GetAPI()
         {
-            string Input = TbCalories.Text;
-            string InputMin = TbCaloriesMin.Text;
-            var client = new HttpClient();
-
-            var request = new HttpRequestMessage
+            string Input;
+            string InputMin;
+            if(Calories == "0") { 
+             Input = TbCalories.Text;
+            InputMin = TbCaloriesMin.Text;
+            }
+            else
             {
-                Method = HttpMethod.Get,
-                RequestUri = new Uri($"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByNutrients?limitLicense=false&maxCalories={Input}&minCalories={InputMin}"),
-                Headers =
+                Input = Calories;
+                InputMin = "0";
+            }
+            var client = new HttpClient();
+            
+            if ( Input  != "" && InputMin != "")
+            {
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Get,
+                    RequestUri = new Uri($"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByNutrients?limitLicense=false&maxCalories={Input}&minCalories={InputMin}"),
+                    Headers =
                {
                     { "X-RapidAPI-Key", "f47554ac2fmsh3315b39d04d3f19p1a81eajsnf816b87369c7" },
                     { "X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com" },
                },
-            };
-            using (var response = await client.SendAsync(request))
+                };
+                using (var response = await client.SendAsync(request))
+                {
+
+                    response.EnsureSuccessStatusCode();
+                    var body = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(body);
+
+                    var result = JsonConvert.DeserializeObject<List<ThirdPartySuggester>>(body);
+
+                    dtGrid2.ItemsSource = result;
+
+                    if (Calories != "0")
+                    {
+                        lblPencarian_.Content = "DAFTAR REKOMENDASI RESEP";
+                        MessageBox.Show("Berikut Adalah Daftar Rekomendasi Resep");
+                        
+                    }
+                    else { lblPencarian_.Content = "HASIL PENCARIAN"; }
+                    
+
+
+                    Calories = "0";
+                }
+            }
+            else
             {
-
-                response.EnsureSuccessStatusCode();
-                var body = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(body);
-               
-                var result = JsonConvert.DeserializeObject<List<ThirdPartySuggester>>(body);
-                
-                dtGrid2.ItemsSource = result;
-
-
-
-
-
+                MessageBox.Show("Pastikan data kalori diisi");
+                Calories = "0";
             }
 
-
+            
 
         }
 

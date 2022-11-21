@@ -24,7 +24,7 @@ namespace Dietalicious
         public static NpgsqlCommand cmd;
         public static NpgsqlCommand cmd2;
         private string sql = null;
-        
+        public double Calories;
         public BMI()
         {
             InitializeComponent();
@@ -54,7 +54,7 @@ namespace Dietalicious
             }
             else
                 cal = (cal + 5) * 1.2;
-            return cal;
+            return cal/3;
         }
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
@@ -68,6 +68,7 @@ namespace Dietalicious
 
                 tbBMI.Text = bmi.ToString();
                 tbCal.Text = cal.ToString();
+                Calories = cal;
 
 
                 conn.Open();
@@ -102,7 +103,7 @@ namespace Dietalicious
         private void Recipe_Click(object sender, RoutedEventArgs e)
         {
             Hide();
-            Recipe_and_Ingredients recipe = new Recipe_and_Ingredients("55");
+            SearchRecipe recipe = new SearchRecipe(Calories);
             recipe.Show();
         }
     }

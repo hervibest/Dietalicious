@@ -81,6 +81,7 @@ namespace Dietalicious
         private void ShowPassword_Checked(object sender, RoutedEventArgs e)
         {
             passTxtBox.Text = tbPass.Password;
+            
             tbPass.Visibility = Visibility.Collapsed;
             passTxtBox.Visibility = Visibility.Visible;
         }
